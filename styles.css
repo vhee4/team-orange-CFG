@@ -1,3 +1,27 @@
+/* GOOGLE FONTS */
+@import url('http://LINKHERE');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik+Mono+One");
+
+html {
+}
+
+head {
+}
+
+body {
+    color: rgb(0,0,0)
+}
+
+/* STYLE FOR TITLES */
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
