@@ -2,6 +2,17 @@
 @import url('http://LINKHERE');
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik+Mono+One");
 
+/* All colours used in the project can be stored here*/
+:root {
+    --brand-color: rgb(57, 102, 57);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
 }
 
@@ -25,14 +36,22 @@ h2 {
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: var(--brand-color);
+    color: white;
 }
 
-.nav-list {
+.header_nav-list {
     display: flex;
-    list-style-type: none;
     justify-content: space-around;
 }
 
-li {
+.header_nav-list li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.header_nav-list li {
+    list-style-type: none;
     padding: 10px;
 }
