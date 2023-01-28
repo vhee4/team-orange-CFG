@@ -18,14 +18,14 @@ html {
     font-size: 12px;
 }
 
-.main {
+/* .main {
     background-color: #f3f3f3;
     color: rgb(0,0,0);
     width: 80%;
     margin: 20px auto;
     padding: 20px 50px;
 
-}
+} */
 
 /* STYLE FOR TITLES */
 
@@ -40,12 +40,14 @@ h2 {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: var(--brand-color);
-    color: white;
+    background-color: rgb(105, 131, 105, 0.1);
+    align-items: center;
+    position: fixed;
+    width: 100%;
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 14px;
-    padding: 10px 20px;
-    text-transform: uppercase;
+    padding: 10px;
+    text-transform: capitalize;
 }
 
 .header_nav-list {
@@ -56,8 +58,8 @@ nav {
 
 .header_nav-list li a {
     text-decoration: none;
-    color: white;
     margin-right: 20px;
+    color: white;
 }
 
 .header_nav-list li {
@@ -79,4 +81,10 @@ nav {
 .footer {
     text-align: left; 
     margin: 20px;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
