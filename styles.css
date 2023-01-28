@@ -1,6 +1,6 @@
 /* GOOGLE FONTS */
 @import url('http://LINKHERE');
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik+Mono+One");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Libre+Baskerville");
 
 /* All colours used in the project can be stored here*/
 :root {
@@ -14,13 +14,17 @@
 }
 
 html {
+    font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    font-size: 12px;
 }
 
-head {
-}
+.main {
+    background-color: #f3f3f3;
+    color: rgb(0,0,0);
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 50px;
 
-body {
-    color: rgb(0,0,0)
 }
 
 /* STYLE FOR TITLES */
@@ -38,9 +42,14 @@ nav {
     justify-content: space-between;
     background-color: var(--brand-color);
     color: white;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: uppercase;
 }
 
 .header_nav-list {
+    position: sticky;
     display: flex;
     justify-content: space-around;
 }
@@ -54,4 +63,20 @@ nav {
 .header_nav-list li {
     list-style-type: none;
     padding: 10px;
+}
+
+.header_logo {
+    display: flex;
+    font-weight: 100;
+}
+
+.header_logo:hover {
+    display: flex;
+    color: rgb(105, 131, 105);
+    font-weight: 500;
+}
+
+.footer {
+    text-align: left; 
+    margin: 20px;
 }
