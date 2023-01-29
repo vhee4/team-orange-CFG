@@ -2,7 +2,7 @@
 @import url('http://LINKHERE');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Libre+Baskerville");
 
-/* All colours used in the project can be stored here*/
+/* All colours used in the project can be stored here */
 :root {
     --brand-color: rgb(57, 102, 57);
 }
@@ -37,29 +37,62 @@ h2 {
     font-size: 18px;
 }
 
+.wrap{
+    position: relative;
+    height: 100vh;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: .9;
+    
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(105, 131, 105, 0.1);
+    background-color: transparent;
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 1;
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 14px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 30px 50px;
     text-transform: capitalize;
+    color: white;
+}
+
+
+.salutation{
+    color: red;
+    height: 100vh;
+}
+
+.topnav{
+    display: none;
 }
 
 .header_nav-list {
     position: sticky;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header_nav-list li a {
     text-decoration: none;
     margin-right: 20px;
-    color: white;
+    color: #fff;
+    font-weight: 700;
+}
+
+.header_nav-list li a:hover {
+    color: var(--brand-color);
+
 }
 
 .header_nav-list li {
@@ -70,6 +103,11 @@ nav {
 .header_logo {
     display: flex;
     font-weight: 100;
+}
+
+.header_logo img{
+    max-width: 10rem;
+
 }
 
 .header_logo:hover {
@@ -83,8 +121,31 @@ nav {
     margin: 20px;
 }
 
-.video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
+
+@media (max-width:600px) {
+
+    nav {
+        padding: 10px;
+    }
+
+    .header_nav-list {
+        display: none;
+    }
+
+    .topnav{
+        display: block;
+    }
+
+        .wrap {
+            position: relative;
+            max-height: 60vh;
+            min-width: 100vw;
+        }
+
+    .video{
+        bottom: 0;
+    }
+
+    
 }
+
