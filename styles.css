@@ -68,9 +68,10 @@ nav {
 }
 
 
-.salutation{
+main{
     color: red;
     height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(169, 199, 169), rgb(78, 110, 78));
 }
 
 .topnav{
