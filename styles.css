@@ -16,6 +16,8 @@
 html {
     font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
     font-size: 12px;
+    display: grid;
+    grid-column: ;
 }
 
 /* .main {
