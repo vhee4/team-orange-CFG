@@ -32,20 +32,11 @@ font-family: "Montserrat", Helvetica, Arial, sans-serif;
     padding: 20px 50px;
 } */
 
-/* STYLE FOR TITLES */
 
-h1 {
-  font-size: 20px;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-.video_wrap {
+/* .video_wrap {
   position: relative;
   height: 100vh;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 .video {
@@ -57,8 +48,9 @@ h2 {
   opacity: .9;
   z-index: -1;
 
-}
+} */
 
+/* NAVIGATION BAR FOR WELCOME PAGE */
 nav {
   display: flex;
   justify-content: space-between;
@@ -87,22 +79,6 @@ nav {
   position: relative;
   color: #fff;
   font-weight: 700;
-}
-
-a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-a::before {
-  background: hsl(45 100% 70%);
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease-in-out;
-  z-index: -1;
 }
 
 .header_nav-list li {
@@ -295,7 +271,7 @@ a::before {
 
 /* THE CONTENT OF THE WEBPAGE */
 
-body{
+body {
   background-color: #006a75;
 }
 
@@ -329,6 +305,7 @@ main {
   border-radius: 20px;
 }
 
+/* TEXT ATTRIBUTES */
 h1 {
   font-size: 48px;
   color: var(--team-color);
@@ -369,6 +346,23 @@ blockquote {
   background-color: rgb(127, 127, 12, 0.1);
 }
 
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+a::before {
+  background: hsl(45 100% 70%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+/* SCROLL ANIMATION BOX - supported by JavaScript */
 .box {
   background-color: transparent;
   margin: auto;
@@ -390,12 +384,13 @@ blockquote {
 }
 
 
+/* FOOTER */
 .footer {
   text-align: left;
   margin: 20px;
 }
 
-
+/* MEDIA QUERIES */
 @media (max-width:600px) {
 
   /* nav {
