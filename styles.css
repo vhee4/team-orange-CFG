@@ -32,8 +32,8 @@ font-family: "Montserrat", Helvetica, Arial, sans-serif;
     padding: 20px 50px;
 } */
 
-
-/* .video_wrap {
+/* VIDEO */
+.video_wrap {
   position: relative;
   height: 100vh;
   z-index: -1;
@@ -48,7 +48,7 @@ font-family: "Montserrat", Helvetica, Arial, sans-serif;
   opacity: .9;
   z-index: -1;
 
-} */
+}
 
 /* NAVIGATION BAR FOR WELCOME PAGE */
 nav {
