@@ -1,15 +1,16 @@
 /* GOOGLE FONTS */
+
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Libre+Baskerville&family=Bebas+Neue");
 
-/* All colours used in the project can be stored here */
+/* COLOR */
 :root {
   --brand-color: rgb(0, 112, 121);
-    --primary-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(61, 69, 34, 0.75);
-    --team-color: rgb(226, 160, 2);
-    --menu-speed: 0.75s;
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(61, 69, 34, 0.75);
+  --team-color: rgb(226, 160, 2);
+  --menu-speed: 0.75s;
 }
 
 * {
@@ -293,6 +294,7 @@ a::before {
 }
 
 /* THE CONTENT OF THE WEBPAGE */
+
 body{
   background-color: #006a75;
 }
@@ -386,9 +388,6 @@ blockquote {
   transform: translateX(0);
   /* transition: all 0.3s; */
 }
-
-
-
 
 
 .footer {
