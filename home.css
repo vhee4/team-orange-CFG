@@ -1,0 +1,13 @@
+/* FONTS */
+@import url('');
+
+/* COLOR */
+:root {
+    --brand: rgb();
+    --primary: rgb();
+    --secondary: rgb();
+    --green: rgb();
+    --blue: rgb();
+}
+
+
