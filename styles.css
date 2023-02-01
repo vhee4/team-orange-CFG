@@ -6,10 +6,13 @@
 /* All colours used in the project can be stored here */
 :root {
   --brand-color: rgb(0, 112, 121);
-    --primary-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(61, 69, 34, 0.75);
-    --team-color: rgb(226, 160, 2);
-    --menu-speed: 0.75s;
+  --opaque-brand-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(61, 69, 34, 0.75);
+  --team-color: rgb(226, 160, 2);
+  --link-hover: rgb(255, 217, 102);
+  --menu-speed: 0.75s;
+  --white: #fff;
+  --ghostwhite: rgb(248, 248, 255);
 }
 
 * {
@@ -41,10 +44,10 @@ h2 {
   font-size: 18px;
 }
 
+/* WELCOME PAGE start */
 .video_wrap {
   position: relative;
   height: 100vh;
-  /* z-index: -1; */
 }
 
 .video {
@@ -59,7 +62,8 @@ h2 {
 }
 
 nav {
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: space-between;
   background: transparent;
   backdrop-filter:  blur(2px);
@@ -71,7 +75,7 @@ nav {
   font-size: 16px;
   padding: 30px 50px;
   text-transform: capitalize;
-  color: white;
+  color: var(--white);
 }
 
 .header_nav-list {
@@ -84,7 +88,7 @@ nav {
   text-decoration: none;
   margin-right: 30px;
   position: relative;
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
 }
 
@@ -94,7 +98,7 @@ a:hover::before {
 }
 
 a::before {
-  background: hsl(45 100% 70%);
+  background: var(--link-hover);
   content: "";
   inset: 0;
   position: absolute;
@@ -244,23 +248,78 @@ a::before {
   padding: .3rem;
   
 }
- .showcase{
-   width: 100%;
-   display: inline-block;
-   text-align: center;
- }
-.container{
-  position: absolute;
-    top: 13rem;
-    left: 0rem;
-    /* background: rgba(0, 0, 0, 0.5); */
-    color: #f1f1f1;
-    padding: 20px;
-    z-index: 3;
-    margin: 0 auto;
+
+.none{
+  display: none;
 }
 
+.container{
+  position: absolute;
+  display: flex;
+  /* padding: 20px; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  color: var(--white);
+  z-index: 3;
+}
+
+.container h1{
+  font-size: 5rem;
+  letter-spacing: .7rem;
+  font-weight: 700;
+}
+
+<<<<<<< HEAD
 >>>>>>> 31f56370ed642a6dc38df395f700c57bc2866933
+=======
+.intro_sub ul{
+  display: flex;
+  text-align: center;
+}
+
+.intro_sub ul li {
+  margin-right: 40px;
+  list-style: none;
+color: var(--ghostwhite);
+font-size: 18px;
+text-align: center;
+}
+
+.btn{
+  padding: 10px 30px;
+  margin: 20px 0;
+}
+  
+button{
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  border: none;
+  background: var(--brand-color);
+  transition: background .5s;
+}
+
+button:hover{
+  background: var(--opaque-brand-color);
+  box-shadow: 0 10px 20px var(--white) .2;
+  color: var(--white);
+
+}
+
+.btn-white{
+  background-color: white;
+    color: grey;
+}
+/* WELCOME PAGE ends */
+
+
+
+>>>>>>> 1e59d511495ed5c6321b4c2a1d7191025afecc32
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -500,12 +559,12 @@ blockquote {
   width: 100%;
   height: 100%;
   text-align: justify;
-  transform: translateX(200%);
+  /* transform: translateX(100%); */
   transition: transform 0.9s ease;
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(-200%);
+  /* transform: translateX(-100%); */
 }
 
 .box.show {
@@ -548,7 +607,7 @@ blockquote {
   }
 
 .menu-wrap {
-  display: inline-flex;
+  /* display: inline-flex; */
 }
 
 }
