@@ -496,6 +496,10 @@ blockquote {
   .header_nav-list {
     display: none;
   }
+
+  .page_topnav {
+    display: none;
+  }
 /* 
   .topnav {
     display: block;
