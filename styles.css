@@ -1,16 +1,15 @@
 /* GOOGLE FONTS */
-
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Libre+Baskerville&family=Bebas+Neue");
 
-/* COLORS */
+/* All colours used in the project can be stored here */
 :root {
   --brand-color: rgb(0, 112, 121);
-  --primary-color: rgba(13, 110, 139, 0.75);
-  --overlay-color: rgba(61, 69, 34, 0.75);
-  --team-color: rgb(226, 160, 2);
-  --menu-speed: 0.75s;
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(61, 69, 34, 0.75);
+    --team-color: rgb(226, 160, 2);
+    --menu-speed: 0.75s;
 }
 
 * {
@@ -36,7 +35,7 @@ font-family: "Montserrat", Helvetica, Arial, sans-serif;
 .video_wrap {
   position: relative;
   height: 100vh;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .video {
@@ -50,7 +49,6 @@ font-family: "Montserrat", Helvetica, Arial, sans-serif;
 
 }
 
-/* NAVIGATION BAR FOR WELCOME PAGE */
 nav {
   display: flex;
   justify-content: space-between;
@@ -81,6 +79,22 @@ nav {
   font-weight: 700;
 }
 
+a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+a::before {
+  background: hsl(45 100% 70%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+
 .header_nav-list li {
   list-style-type: none;
   padding: 10px;
@@ -96,12 +110,41 @@ nav {
   padding: .3rem;
   
 }
- .showcase{
+
+
+/* NAVBAR for PAGES */
+.page_topnav {
+  display: flex; 
+  color: rgb(0,0,0);
+  justify-content: space-evenly;
+}
+
+.page_topnav li {
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.page_topnav li a {
+  color: var(--brand-color);
+  background-color: none;
+  text-decoration: none;
+}
+
+.page_topnav li a:hover {
+  display: flex;
+  background-color: none;
+}
+
+
+/* SHOWCASE */
+
+.showcase {
    width: 100%;
    display: inline-block;
    text-align: center;
  }
-.container{
+
+.container {
   position: absolute;
     top: 13rem;
     left: 0rem;
@@ -270,9 +313,8 @@ nav {
 }
 
 /* THE CONTENT OF THE WEBPAGE */
-
 body {
-  background-color: #006a75;
+  background-color: #ffffff;
 }
 
 main {
@@ -298,7 +340,7 @@ main {
 
 .content {
   background-color: rgb(226, 226, 231);
-  color: rgb(203, 21, 21);
+  color: rgb(0, 0, 0);
   width: 80%;
   margin: 20px auto;
   padding: 20px 50px;
@@ -346,23 +388,6 @@ blockquote {
   background-color: rgb(127, 127, 12, 0.1);
 }
 
-a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-a::before {
-  background: hsl(45 100% 70%);
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease-in-out;
-  z-index: -1;
-}
-
-/* SCROLL ANIMATION BOX - supported by JavaScript */
 .box {
   background-color: transparent;
   margin: auto;
