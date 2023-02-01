@@ -5,12 +5,14 @@
 
 /* All colours used in the project can be stored here */
 :root {
-  --brand-color: rgb(0, 112, 121);
+  --brand-color: rgb(108, 126, 76);
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(61, 69, 34, 0.75);
     --team-color: rgb(226, 160, 2);
     --menu-speed: 0.75s;
 
+    --grey: rgb(198, 198, 188);
+    --blue: rgb(203,209,207);
   
 }
 
@@ -22,6 +24,8 @@
 
 html {
 font-family: "Montserrat", Helvetica, Arial, sans-serif;
+scroll-behavior: smooth;
+font-size: 14px;
 }
 
 /* .main {
@@ -136,32 +140,69 @@ a::before {
 
 
 /* NAVBAR for PAGES */
+.page_logo {
+  display: inline-flex; 
+  position: fixed;
+  top: 0;
+  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  z-index: 1;
+}
+
 .page_topnav {
+  position: fixed;
   display: flex;
-  color: rgb(0,0,0);
-  justify-content: space-evenly;
-  background-color: #f3f3f3;
-  padding: 20px;
-  font-size: 16px;
+  justify-content: space-around;
+  background-color: #3c4421;
+  align-items: center;
+  color: var(--primary-color);
+  z-index: 1;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  padding: 40px;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
 }
 
 .page_topnav li {
+  display: inline;
   list-style-type: none;
-  justify-content: space-evenly;
-  margin: 10px 0;
-
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .page_topnav li a {
-  color: var(--brand-color);
-  background-color: none;
-  text-decoration: none;
+  list-style-type: none;
+  color: rgb(209, 209, 209);
 }
 
 .page_topnav li a:hover {
-  display: flex;
-  background-color: none;
+  text-decoration: none;
 }
+
+.page_topnav a::before {
+  background: var(--team-color);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+  }
+  
+  .page_topnav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  }
+
+
+/* PAGE SELECTORS */
 
 
 /* SHOWCASE */
@@ -367,12 +408,14 @@ main {
 }
 
 .content {
-  background-color: rgb(226, 226, 231);
+  display: block;
+  background-color: rgb(226, 226, 231,0.4);
   color: rgb(0, 0, 0);
   width: 80%;
-  margin: 20px auto;
+  margin: 150px auto 40px;
   padding: 20px 50px;
   border-radius: 20px;
+  text-align: justify;
 }
 
 /* TEXT ATTRIBUTES */
@@ -392,7 +435,7 @@ h2 {
 
 p {
   padding: 10px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 em {
@@ -436,11 +479,13 @@ blockquote {
   /* transition: all 0.3s; */
 }
 
-
 /* FOOTER */
 .footer {
-  text-align: left;
-  margin: 20px;
+  text-align: center;
+  background-color: var(--blue);
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 5%;
 }
 
 /* MEDIA QUERIES */
