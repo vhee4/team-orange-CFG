@@ -36,44 +36,67 @@ nav {
     display: flex;
     justify-content: space-between;
     background: var(--opaque-brand-color);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1;
     font-family: '';
     font-size: 16px;
-    padding: 30px 50px;
+    padding: 30px 10px;
     color:rgb(226, 160, 2)
-}
+  }
+  
+  .header_logo {
+    display: flex;
+    color: rgb(105, 131, 105);
+    font-weight: 500;
+  }
+
 
 .header_nav-list {
-    position: sticky;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-}
-
-.header_nav-list a {
-    position: sticky; 
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
 }
 
 .header_nav-list li a {
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 40px;
     position: relative;
-    color: var(--opaque-brand-color);
+    font-size: 18px;
     font-weight: 700;
     list-style-type: none;
-}
+    color: #d3b874;
+  }
+
+  
+  a::before {
+    background: var(--ghostwhite);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .header_nav-list li a:hover{
+      /* color: var(--brand-color); */
+      transition: 1s;
+    }
 
 /* HAMBURGER MENU BAR */
 .menu-wrap {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
     right: 0;
     z-index: 1;
     display: none;
@@ -204,8 +227,8 @@ nav {
   .menu-wrap .menu>div>div>ul>li {
     list-style: none;
     text-align: center;
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 2.5rem;
+    margin-top: 6rem;
     color: #fff;
   }
   
@@ -222,21 +245,22 @@ nav {
     padding: .3rem;
   }
 
-  .header_logo:hover {
-    display: flex;
-    color: rgb(105, 131, 105);
-    font-weight: 500;
-  }
 
   /* Components of the Website; i.e. sections, containers, etc.. */
   body {
-    background-color: #000);
+    background-color: white;
   }
 
   main {
+    position: absolute;
+    top: 15%;
     color: rgb(0,0,0);
-    padding: 10%;
-    margin: auto;
+    padding: 0 4rem;
+    margin: 0 auto;
+  }
+  
+  .none {
+    display: none;
   }
 
   content {
@@ -244,7 +268,7 @@ nav {
     background-color: var(--brand-color);
     color:rgba(61, 69, 34);
     width: 80%;
-    margin: 20px auto;
+    margin: 70px auto;
     padding: 20px 50px;
     border-radius: 20px;
     text-align: justify;
