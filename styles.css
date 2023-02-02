@@ -57,6 +57,7 @@ font-size: 14px;
 
 }
 
+
 nav {
   display: none;
   /* display: flex; */
@@ -136,7 +137,6 @@ a::before {
   font-weight: 100;
 }
 
-<<<<<<< HEAD
 .header_logo:hover {
   display: flex;
   color: rgb(105, 131, 105);
@@ -153,31 +153,6 @@ a::before {
   border-radius: 0px;
 }
 
-
-@media (max-width:600px) {
-
-  nav {
-      padding: 10px;
-  }
-
-  .header_nav-list {
-      display: none;
-  }
-
-  .topnav{
-      display: block;
-  }
-
-      .wrap {
-          position: relative;
-          max-height: 60vh;
-          min-width: 100vw;
-      }
-
-  .video{
-      bottom: 0;
-  }
-}
 
 /* SCROLL ANIMATION */
 
@@ -340,7 +315,6 @@ a::before {
    text-align: center;
  }
 
-.container {
 .none{
   display: none;
 }
@@ -375,10 +349,11 @@ a::before {
 .intro_sub ul li {
   margin-right: 40px;
   list-style: none;
-color: var(--ghostwhite);
-font-size: 18px;
-text-align: center;
+  color: var(--ghostwhite);
+  font-size: 18px;
+  text-align: center;
 }
+
 
 .btn{
   padding: 10px 30px;

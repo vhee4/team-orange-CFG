@@ -2,13 +2,18 @@
 
 const boxes = document.querySelectorAll(".box");
 const menuBar = document.querySelector(".menu-wrap");
-const containerWrapper = document.getElementById("showcase");
+const contentWrapper = document.getElementById("content");
 
-const removeContainer = () => {
-  containerWrapper.classList.toggle("none")
+const removeContent = () => {
+  contentWrapper.classList.toggle("none")
 }
 
-menuBar.addEventListener("click", removeContainer)
+menuBar.addEventListener("click", removeContent)
+
+//the explore button on the welcome page which will direct to the home page 
+ function myFunction() {
+      window.location.href = "Home.html";
+    }
 
 
 
