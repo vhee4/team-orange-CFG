@@ -6,6 +6,7 @@
 /* All colours used in the project can be stored here */
 :root {
   --brand-color: rgb(0, 112, 121);
+  --brand-color2: rgb(108, 126, 76);
   --opaque-brand-color: rgba(13, 110, 139, 0.75);
   --overlay-color: rgba(61, 69, 34, 0.75);
   --team-color: rgb(226, 160, 2);
@@ -13,6 +14,8 @@
   --menu-speed: 0.75s;
   --white: #fff;
   --ghostwhite: rgb(248, 248, 255);
+  --grey: rgb(198, 198, 188);
+  --blue: rgb(203,209,207);
 }
 
 * {
@@ -23,7 +26,8 @@
 
 html {
 font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 1.4rem;
+scroll-behavior: smooth;
+font-size: 14px;
 }
 
 /* .main {
@@ -34,17 +38,9 @@ font-family: "Montserrat", Helvetica, Arial, sans-serif;
     padding: 20px 50px;
 } */
 
-/* STYLE FOR TITLES */
-
-h1 {
-  font-size: 20px;
-}
-
-h2 {
-  font-size: 18px;
-}
 
 /* WELCOME PAGE start */
+
 .video_wrap {
   position: relative;
   height: 100vh;
@@ -92,7 +88,29 @@ nav {
   font-weight: 700;
 }
 
+a {
+color: var(--primary-color);
+position: relative;
+text-decoration: none;
+}
+
+a::before {
+background: hsl(45 100% 70%);
+content: "";
+inset: 0;
+position: absolute;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.5s ease-in-out;
+z-index: -1;
+}
+
 a:hover::before {
+transform: scaleX(1);
+transform-origin: left;
+}
+
+/* a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -104,9 +122,9 @@ a::before {
   position: absolute;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: -1;
-}
+} */
 
 .header_nav-list li {
   list-style-type: none;
@@ -249,6 +267,80 @@ a::before {
   
 }
 
+
+/* NAVBAR for PAGES */
+.page_logo {
+  display: inline-flex; 
+  position: fixed;
+  top: 0;
+  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  z-index: 1;
+}
+
+.page_topnav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-color: #3c4421;
+  align-items: center;
+  color: var(--primary-color);
+  z-index: 1;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  padding: 40px;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.page_topnav li {
+  display: inline;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.page_topnav li a {
+  list-style-type: none;
+  color: rgb(209, 209, 209);
+}
+
+.page_topnav li a:hover {
+  text-decoration: none;
+}
+
+.page_topnav a::before {
+  background: var(--team-color);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+  }
+  
+  .page_topnav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  }
+
+
+
+/* SHOWCASE */
+
+.showcase {
+   width: 100%;
+   display: inline-block;
+   text-align: center;
+ }
+
+.container {
 .none{
   display: none;
 }
@@ -474,8 +566,8 @@ button:hover{
 }
 
 /* THE CONTENT OF THE WEBPAGE */
-body{
-  background-color: #006a75;
+body {
+  background-color: #ffffff;
 }
 
 main {
@@ -500,14 +592,17 @@ main {
 }
 
 .content {
-  background-color: rgb(226, 226, 231);
-  color: rgb(203, 21, 21);
+  display: block;
+  background-color: rgb(226, 226, 231,0.4);
+  color: rgb(0, 0, 0);
   width: 80%;
-  margin: 20px auto;
+  margin: 150px auto 40px;
   padding: 20px 50px;
   border-radius: 20px;
+  text-align: justify;
 }
 
+/* TEXT ATTRIBUTES */
 h1 {
   font-size: 48px;
   color: var(--team-color);
@@ -568,16 +663,16 @@ blockquote {
   /* transition: all 0.3s; */
 }
 
-
-
-
-
+/* FOOTER */
 .footer {
-  text-align: left;
-  margin: 20px;
+  text-align: center;
+  background-color: var(--blue);
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 5%;
 }
 
-
+/* MEDIA QUERIES */
 @media (max-width:600px) {
 
   /* nav {
@@ -585,6 +680,10 @@ blockquote {
   } */
 
   .header_nav-list {
+    display: none;
+  }
+
+  .page_topnav {
     display: none;
   }
 /* 
