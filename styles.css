@@ -242,7 +242,7 @@ a::before {
 } */
 
 /* MENU STYLES */
-=======
+
 .header_nav-list li a:hover {
   color: var(--brand-color);
   padding: .3rem;
@@ -274,9 +274,7 @@ a::before {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
->>>>>>> 31f56370ed642a6dc38df395f700c57bc2866933
-=======
+
 .intro_sub ul{
   display: flex;
   text-align: center;
@@ -318,8 +316,6 @@ button:hover{
 /* WELCOME PAGE ends */
 
 
-
->>>>>>> 1e59d511495ed5c6321b4c2a1d7191025afecc32
 .menu-wrap {
   position: fixed;
   top: 0;
