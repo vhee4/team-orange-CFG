@@ -5,14 +5,13 @@
 
 </head>
 <body>
+<h2>Signup form</h2>
+<p>Would you like to become a member of our community. Wait no more! Sign up now!</p>
 
  <!-- Signup and Login Buttons -->
-<h2>Signup Form</h2>
 
 <button class="form-button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
-
-
-<h3>Do you already an account?</h3>
+<p>Do you already have an account? Login now. </p>
 <button class="form-button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
 
 <!-- Signup form modal -->
@@ -38,10 +37,10 @@
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label>
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
 
       <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" class="cancelbtn">Cancel</button>
         <button type="submit" class="signupbtn">Sign Up</button>
       </div>
     </div>
@@ -49,31 +48,29 @@
 </div>
 
 <!--Login form modal -->
-<div id="id02" class="login-modal">
-    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-    <h2>Login Form</h2>
+   
 
-    <form action="/action_page.php" method="post">
-      
+
+    <div id="id02" class="login-modal">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Login</h1>
+          <p>Please login to your account.</p>
+          <hr>
+          <label for="name"><b>Username</b></label>
+          <input type="text" placeholder="Enter your username" name="name" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
     
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
     
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-            
-        <button type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-    
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
-      </div>
-    </form>     
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Login</button>
+           
+          </div>
+        </div>
+      </form>
+    </div>
 
 
 
