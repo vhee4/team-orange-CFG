@@ -128,11 +128,6 @@ button:hover {
   opacity: 0.8;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
 
 
 .container {
@@ -175,6 +170,7 @@ span.psw {
   background-color: rgba(13, 110, 139, 0.75);
   padding-top: 50px;
 }
+
 
 /* Subscribe form styles */
 
