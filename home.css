@@ -62,19 +62,27 @@ nav {
     border-bottom: 2px solid var(--team-color);
 }
 
+ .header_logo {
+    display: flex;
+    color: rgb(105, 131, 105);
+    font-weight: 500;
+  }
+
 .header_logo:hover {
   display: flex;
   color: rgb(105, 131, 105);
   font-weight: 500;
-}
+    padding: 30px 10px;
+    color:rgb(226, 160, 2)
+  }
 
 /* .header_nav-list {
     position: sticky;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    background-color: none; */
-}
+    background-color: none; 
+} */
 
 .header_nav-list a {
     position: sticky; 
@@ -88,11 +96,12 @@ nav {
 .header_nav-list li a {
     text-decoration: none;
     background: none;
-    margin-right: 30px;
+    margin-right: 40px;
     position: relative;
     color: var(--brand-color);
+    font-size: 18px;
     font-weight: 800;
-    list-style-type: none;
+    list-style: none;
     justify-content: space-around;
     border: 1px double var(--brand-color);
     padding: 5px;
@@ -112,6 +121,28 @@ nav {
   border: 1px solid var(--light-beige);
   padding: 5px;
 }
+
+  a::before {
+    background: var(--ghostwhite);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .header_nav-list li a:hover{
+      /* color: var(--brand-color); */
+      transition: 1s;
+    }
 
 
 /* HAMBURGER MENU BAR */
@@ -251,6 +282,10 @@ nav {
     padding: 1rem;
     /* color: var(--green); */
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    /* font-size: 2.5rem;
+    margin-top: 6rem;
+    color: #fff; */
+
   }
   
   .menu-wrap .menu>div>div>ul>li>a {
@@ -276,13 +311,14 @@ nav {
     color: rgb(0,0,0);
     padding: 20px;
     margin: auto;
-    background-color: "";
+    background-color: white;
   }
 
   .content {
     display: block;
     width: 80%;
-    margin: 150px auto 40px;
+    margin: 150px auto 40px; /*look here*/
+    /*margin: 70px auto;*/
     padding: 20px 50px;
     border-radius: 20px;
     text-align: justify;
