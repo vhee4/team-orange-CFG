@@ -57,6 +57,7 @@ font-size: 14px;
 
 }
 
+
 nav {
   display: none;
   /* display: flex; */
@@ -135,6 +136,105 @@ a::before {
   display: flex;
   font-weight: 100;
 }
+
+.header_logo:hover {
+  display: flex;
+  color: rgb(105, 131, 105);
+  font-weight: 500;
+}
+
+.footer {
+  background-color: ;
+  color: #3b576c;
+  text-align: center;
+  margin: 20px auto 0;
+  padding: 30px;
+  width: 100%;
+  border-radius: 0px;
+}
+
+
+/* SCROLL ANIMATION */
+
+.box {
+  background-color: ;
+  margin: auto;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  transform: translateX(200%);
+  transition: transform 0.9s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+/* HAMBURGER MENU */
+/* .container {
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+} */
+
+/* .showcase {
+  background: var(--brand-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+} */
+
+/* .showcase:before {
+  content: "";
+  background: url("https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
+
+/* .showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+} */
+
+/* .showcase h1 {
+  font-size: 4rem;
+} */
+
+/* .showcase p {
+  font-size: 1.3rem;
+} */
+
+/* .btn {
+  display: inline-block;
+  border: none;
+  background: var(--brand-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+} */
+
+/* .btn:hover {
+  opacity: 0.7;
+} */
+
+/* MENU STYLES */
 
 .header_nav-list li a:hover {
   color: var(--brand-color);
@@ -215,12 +315,11 @@ a::before {
    text-align: center;
  }
 
-.container {
 .none{
   display: none;
 }
 
-.container{
+.container {
   position: absolute;
   display: flex;
   /* padding: 20px; */
@@ -235,13 +334,14 @@ a::before {
   z-index: 3;
 }
 
-.container h1{
+.container h1 {
   font-size: 5rem;
   letter-spacing: .7rem;
   font-weight: 700;
 }
 
-.intro_sub ul{
+
+.intro_sub ul {
   display: flex;
   text-align: center;
 }
@@ -249,23 +349,27 @@ a::before {
 .intro_sub ul li {
   margin-right: 40px;
   list-style: none;
-color: var(--ghostwhite);
-font-size: 18px;
-text-align: center;
+  color: var(--ghostwhite);
+  font-size: 18px;
+  text-align: center;
 }
+
 
 .btn{
   padding: 10px 30px;
   margin: 20px 0;
 }
   
-button{
+button {
   cursor: pointer;
   border-radius: 40px;
   font-size: 1.1rem;
   border: none;
   background: var(--brand-color);
   transition: background .5s;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 100;
 }
 
 button:hover{
@@ -280,7 +384,6 @@ button:hover{
     color: grey;
 }
 /* WELCOME PAGE ends */
-
 
 
 .menu-wrap {

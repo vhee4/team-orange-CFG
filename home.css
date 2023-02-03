@@ -36,6 +36,13 @@ html {
     font-size: 16px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 /* NAVIGATION BAR */
 nav {
     display: flex;
@@ -61,12 +68,12 @@ nav {
   font-weight: 500;
 }
 
-.header_nav-list {
+/* .header_nav-list {
     position: sticky;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    background-color: none;
+    background-color: none; */
 }
 
 .header_nav-list a {
@@ -269,7 +276,7 @@ nav {
     color: rgb(0,0,0);
     padding: 20px;
     margin: auto;
-    background-color: ;
+    background-color: "";
   }
 
   .content {
@@ -307,6 +314,7 @@ nav {
     margin: auto;
     padding: 50px;
   }
+
 
   /* TEXT ATTRIBUTES */
   h1 {
