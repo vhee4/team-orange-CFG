@@ -54,9 +54,10 @@ font-size: 14px;
   min-width: 100%;
   opacity: .9;
   z-index: -1;
-  background: transparent url('assets/images/pexels-oliver-sjöström-931018.jpg') 50% 50% / cover no-repeat;
-    
+}
 
+.video[poster]{
+  object-fit: cover;
 }
 
 
