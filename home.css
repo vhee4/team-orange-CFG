@@ -72,26 +72,25 @@ nav {
   display: flex;
   color: rgb(105, 131, 105);
   font-weight: 500;
-    padding: 30px 10px;
-    color:rgb(226, 160, 2)
-  }
+  color:rgb(226, 160, 2)
+}
 
-/* .header_nav-list {
+.header_nav-list {
     position: sticky;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     background-color: none; 
-} */
+}
 
-.header_nav-list a {
+/* .header_nav-list a {
     position: sticky; 
     display: flex;
     background-color: none;
     justify-content: space-between;
     list-style: none;
     padding: 4px;
-}
+} */
 
 .header_nav-list li a {
     text-decoration: none;
@@ -112,7 +111,7 @@ nav {
 .header_nav-list li a:hover {
   transform: none;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 40px;
   position: relative;
   color: var(--ghostwhite);
   font-weight: 500;
@@ -256,6 +255,7 @@ nav {
   
   .menu-wrap .menu>div {
     background-color: var(--opaque-brand-color);
+    backdrop-filter: blur(3px);
     border-radius: 50%;
     width: 400vw;
     height: 400vw;
