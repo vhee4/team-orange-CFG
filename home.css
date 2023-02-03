@@ -1,6 +1,7 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Libre+Baskerville&family=Bebas+Neue");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans");
 
 /* CUSTOM PROPERTIES */
 :root {
@@ -12,8 +13,12 @@
     --link-hover: rgb(255, 217, 102);
     --white: #fff;
     --ghostwhite: rgb(248, 248, 255);
+    --transparent: rgb(127,128,129, 0.75);
     --grey: rgb(198, 198, 188);
     --blue: rgb(203,209,207);
+    --green: rgb(105, 131, 105);
+    --beige: #8a7e6e;
+    --light-beige: #c1beae;
 
     /* SPEED */
     --menu-speed: 0.75s;
@@ -26,51 +31,89 @@
 }
 
 html {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-family: "Public Sans", Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* NAVIGATION BAR */
 nav {
     display: flex;
     justify-content: space-between;
-    background: var(--opaque-brand-color);
-    backdrop-filter: blur(5px);
+    background: var(--ghostwhite);
+    backdrop-filter: blur(1px);
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1;
-    font-family: '';
+    top: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 16px;
-    padding: 30px 10px;
-    color:rgb(226, 160, 2)
-  }
-  
-  .header_logo {
+    font-weight: 700px;
+    padding: 50px;
+    color: var(--team-color);
+    border-bottom: 2px solid var(--team-color);
+}
+
+ .header_logo {
     display: flex;
     color: rgb(105, 131, 105);
     font-weight: 500;
   }
 
+.header_logo:hover {
+  display: flex;
+  color: rgb(105, 131, 105);
+  font-weight: 500;
+    padding: 30px 10px;
+    color:rgb(226, 160, 2)
+  }
 
 .header_nav-list {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    background-color: none;
+}
+
+.header_nav-list a {
+    position: sticky; 
+    display: flex;
+    background-color: none;
+    justify-content: space-between;
+    list-style: none;
+    padding: 4px;
 }
 
 .header_nav-list li a {
     text-decoration: none;
+    background: none;
     margin-right: 40px;
     position: relative;
+    color: var(--brand-color);
     font-size: 18px;
-    font-weight: 700;
-    list-style-type: none;
-    color: #d3b874;
-  }
+    font-weight: 800;
+    list-style: none;
+    justify-content: space-around;
+    border: 1px double var(--brand-color);
+    padding: 5px;
+    box-shadow: 3px 2px var(--team-color);
+    text-transform: capitalize;
+}
 
-  
+.header_nav-list li a:hover {
+  transform: none;
+  text-decoration: none;
+  margin-right: 30px;
+  position: relative;
+  color: var(--ghostwhite);
+  font-weight: 500;
+  list-style-type: none;
+  justify-content: space-between;
+  border: 1px solid var(--light-beige);
+  padding: 5px;
+}
+
   a::before {
     background: var(--ghostwhite);
     content: "";
@@ -93,10 +136,11 @@ nav {
       transition: 1s;
     }
 
+
 /* HAMBURGER MENU BAR */
 .menu-wrap {
-  position: fixed;
-  top: 0;
+    position: fixed;
+    top: 30px;
     right: 0;
     z-index: 1;
     display: none;
@@ -104,7 +148,7 @@ nav {
   
   .menu-wrap .toggler {
     position: absolute;
-    top: 15px;
+    top: 20px;
     right: 20px;
     z-index: 2;
     cursor: pointer;
@@ -133,7 +177,7 @@ nav {
     flex: none;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: var(--team-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,7 +193,7 @@ nav {
     top: -10px;
     width: 100%;
     height: 2px;
-    background: white;
+    background: inherit;
   }
   
   /* Moves Line Down */
@@ -203,11 +247,10 @@ nav {
   }
   
   .menu-wrap .menu>div {
-    background-color: rgba(0, 112,121, 0.4);
-    /* opacity: .4; */
+    background-color: var(--opaque-brand-color);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 400vw;
+    height: 400vw;
     display: flex;
     flex: none;
     align-items: center;
@@ -227,20 +270,25 @@ nav {
   .menu-wrap .menu>div>div>ul>li {
     list-style: none;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    /* color: var(--green); */
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    /* font-size: 2.5rem;
     margin-top: 6rem;
-    color: #fff;
+    color: #fff; */
+
   }
   
   .menu-wrap .menu>div>div>ul>li>a {
-    color: inherit;
+    color: white;
     position: relative;
     text-decoration: none;
     transition: color 0.4s ease;
   }
   
   .menu-wrap .menu>div>div>ul>li>a:hover {
-    color: #007079;
+    color: #fff;
     font-weight: 600;
     padding: .3rem;
   }
@@ -248,7 +296,14 @@ nav {
 
   /* Components of the Website; i.e. sections, containers, etc.. */
   body {
-    background-color: white;
+    background-color: #fff;
+  }
+
+  .main {
+    color: rgb(0,0,0);
+    padding: 20px;
+    margin: auto;
+    background-color:  white;
   }
 
   main {
@@ -263,12 +318,11 @@ nav {
     display: none;
   }
 
-  content {
+  .content {
     display: block;
-    background-color: var(--brand-color);
-    color:rgba(61, 69, 34);
     width: 80%;
-    margin: 70px auto;
+    margin: 150px auto 40px; /*look here*/
+    /*margin: 70px auto;*/
     padding: 20px 50px;
     border-radius: 20px;
     text-align: justify;
@@ -278,6 +332,7 @@ nav {
     position: absolute;
     top: 13rem;
     left: 0rem;
+    background-color: #000;
     color: #000;
     padding: 20px;
     z-index: 3;
@@ -291,10 +346,19 @@ nav {
     color: var(--team-color);
   }
 
+  .footer {
+    text-align: left justify;
+    background-color: var(--opaque-brand-color);
+    color: var(--ghostwhite);
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+  }
+
   /* TEXT ATTRIBUTES */
   h1 {
     font-size: 48px;
-    color: var(--team-color);
+    color: var(--beige);
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     font-weight: 100;
   }
@@ -303,18 +367,25 @@ nav {
     font-size: 40px;
     font-family: "Bebas Neue", Helvetica, sans-serif;
     font-weight: 100;
-    color: var(--brand-color);
+    color: var(--light-beige);
   }
   
   p {
     padding: 10px 0;
-    font-size: 14px;
+    font-size: inherit;
   }
   
   em {
-    font-family: "Indie Flower";
+    font-family: "Caveat";
+    font-size: 18px;
+    color: var(--brand-color)
   }
-  
+
+  strong {
+    font-weight: 800;
+    color: var(--team-color);
+  }
+
   hr {
     border: 0;
     height: 1px;
@@ -322,15 +393,46 @@ nav {
         rgba(0, 0, 0, 0),
         rgba(50, 50, 50, 0.5),
         rgba(0, 0, 0, 0));
+    margin: 20px;
   }
   
   blockquote {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Baskerville";
-    padding: 20px;
-    margin: 10px;
+    padding: 50px;
+    margin: 30px auto 30px;
+    width: 70%;
+    -moz-box-align: center;
     background-color: rgb(127, 127, 12, 0.1);
+    border-radius: 0em;
+    border-top: 3px double var(--beige);
+    border-left: 4px dotted var(--beige);
+    border-right: 1px dotted var(--beige);
+    border-bottom: 1px dotted var(--beige);
+    box-shadow: 10px 9px rgb(198, 198, 188);
   }
+
+  a {
+    color: var(--green);
+    position: relative;
+    text-decoration: none;
+    }
+    
+    a::before {
+    background-color: var(--link-hover);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+    z-index: -1;
+    }
+    
+    a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    }
 
   /* BOX SCROLL ANIMATION */
   .box {
@@ -350,7 +452,7 @@ nav {
   
   .box.show {
     transform: translateX(0);
-    /* transition: all 0.3s; */
+    transition: all 0.7s;
   }
 
   /* MEDIA QUERIES */
