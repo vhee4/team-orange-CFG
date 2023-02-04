@@ -1,7 +1,5 @@
-/* Signup form styles */
-body {
-  font-family: Helvetica, sans-serif;
-}
+/* Signup and login forms styles */
+
 
 * {
   box-sizing: border-box;
@@ -24,7 +22,7 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 /* Set a style for all buttons */
-.form-btn {
+.form-btn, .signup-btn {
   background-color: rgb(0, 112, 121);
   color: white;
   padding: 14px 20px;
@@ -32,7 +30,6 @@ input[type=text]:focus, input[type=password]:focus {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-
   opacity: 0.9;
 }
 
@@ -48,8 +45,10 @@ button:hover {
   border-radius: 5px;
 }
 
+
+
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn .form-btn {
+.cancelbtn, .signup-btn {
   float: left;
   width: 48%;
   margin: 2px;
@@ -108,12 +107,6 @@ hr {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
-}
-
-
-/* login form styles */
-.container {
-  padding: 16px;
 }
 
 span.psw {
