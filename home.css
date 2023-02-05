@@ -65,21 +65,16 @@ nav {
     border-bottom: 2px solid var(--team-color);
 }
 
- .header_logo {
-    color: rgb(105, 131, 105);
-    font-weight: 500;
-  }
+.header_logo{
+  text-align: center;
+  padding: 15px 0 0 20px;
 
-  .header_logo > img {
-    display: flex;
-    width: 150px;
-    height: 1px 20px;
-    /* justify-content: space-around; */
-  }
-
-.header_logo:hover {
-  color: rgb(105, 131, 105);
 }
+
+.header_logo > img {
+    width: 100px;
+  }
+
 
 .header_nav-list {
     position: sticky;
@@ -143,7 +138,7 @@ nav {
 /* HAMBURGER MENU BAR */
 .menu-wrap {
     position: fixed;
-    top: 30px;
+    top: 20px;
     right: 0;
     z-index: 1;
     display: none;
@@ -300,11 +295,13 @@ nav {
 
   /* Components of the Website; i.e. sections, containers, etc.. */
   body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 251, 245);
+
   }
 
   .main {
-    color: rgb(0,0,0);
+    /* color: rgb(0,0,0); */
+    background-color: var(--nav);
     padding: 20px;
     margin: auto;
   }
@@ -312,11 +309,47 @@ nav {
   .content {
     display: block;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px 50px;
     border-radius: 20px;
     text-align: justify;
   }
+
+  .content_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    margin-bottom: 50px;
+    font-family: "Indieflower";
+  }
+
+    .content_top:nth-child(1) {
+    margin-top: 120px;
+    }
+
+  .content_top img{
+    width: 40%;
+    border-radius: 50%;
+  }
+
+
+  .content_writeup{
+    width: 50%;
+    text-align: center;
+  }
+
+    .content_top p {
+      font-size: 60px;
+      margin-bottom: 15px;
+      color: var(--brand-color);
+    }
+
+        .content_top small {
+          font-size: 16px;
+          line-height: 35px;
+          color: rgb(138, 126, 110);
+        }
 
 
   .container {
@@ -566,4 +599,23 @@ nav {
         display: inline-flex;
     }
   
+  .content_top {
+    flex-direction: column;
+  }
+
+    .content_top img{
+      width: 100%;
+    }
+
+  .content_top:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+
+
+.content_writeup {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+}
   }
