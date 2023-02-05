@@ -340,8 +340,6 @@ a::before {
   font-weight: 700;
 }
 
-
-
 .intro_sub ul {
   display: flex;
   text-align: center;
@@ -354,7 +352,6 @@ a::before {
   font-size: 18px;
   text-align: center;
 }
-
 
 .btn{
   padding: 10px 30px;
