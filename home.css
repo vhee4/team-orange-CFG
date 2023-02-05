@@ -19,6 +19,8 @@
     --green: rgb(105, 131, 105);
     --beige: #8a7e6e;
     --light-beige: #c1beae;
+    --nav: #fdfbf5;
+    --footer: rgba(0, 113, 121, 0.708);
 
     /* SPEED */
     --menu-speed: 0.75s;
@@ -33,7 +35,8 @@
 html {
     font-family: "Public Sans", Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 1vw;
+    line-height: 1.4;
 }
 
 img {
@@ -47,7 +50,7 @@ img {
 nav {
     display: flex;
     justify-content: space-between;
-    background: var(--ghostwhite);
+    background: var(--nav);
     backdrop-filter: blur(1px);
     align-items: center;
     position: fixed;
@@ -56,23 +59,26 @@ nav {
     top: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: 700px;
-    padding: 50px;
+    /* font-weight: 700px; */
+    padding: 10px;
     color: var(--team-color);
     border-bottom: 2px solid var(--team-color);
 }
 
  .header_logo {
-    display: flex;
     color: rgb(105, 131, 105);
     font-weight: 500;
   }
 
+  .header_logo > img {
+    display: flex;
+    width: 150px;
+    height: 1px 20px;
+    /* justify-content: space-around; */
+  }
+
 .header_logo:hover {
-  display: flex;
   color: rgb(105, 131, 105);
-  font-weight: 500;
-  color:rgb(226, 160, 2)
 }
 
 .header_nav-list {
@@ -83,15 +89,6 @@ nav {
     background-color: none; 
 }
 
-/* .header_nav-list a {
-    position: sticky; 
-    display: flex;
-    background-color: none;
-    justify-content: space-between;
-    list-style: none;
-    padding: 4px;
-} */
-
 .header_nav-list li a {
     text-decoration: none;
     background: none;
@@ -99,13 +96,13 @@ nav {
     position: relative;
     color: var(--brand-color);
     font-size: 18px;
-    font-weight: 800;
     list-style: none;
     justify-content: space-around;
     border: 1px double var(--brand-color);
     padding: 5px;
     box-shadow: 3px 2px var(--team-color);
     text-transform: capitalize;
+  
 }
 
 .header_nav-list li a:hover {
@@ -113,12 +110,11 @@ nav {
   text-decoration: none;
   margin-right: 40px;
   position: relative;
-  color: var(--ghostwhite);
-  font-weight: 500;
+  color: var(--team-color);
+  /* font-weight: 500; */
   list-style-type: none;
   justify-content: space-between;
   border: 1px solid var(--light-beige);
-  padding: 5px;
 }
 
   a::before {
@@ -292,11 +288,11 @@ nav {
     color: white;
     position: relative;
     text-decoration: none;
-    transition: color 0.4s ease;
+    transition: color 0.5s ease;
   }
   
   .menu-wrap .menu>div>div>ul>li>a:hover {
-    color: #fff;
+    color: var(--brand-color);
     font-weight: 600;
     padding: .3rem;
   }
@@ -304,35 +300,63 @@ nav {
 
   /* Components of the Website; i.e. sections, containers, etc.. */
   body {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
   }
 
   .main {
     color: rgb(0,0,0);
     padding: 20px;
     margin: auto;
-    background-color: white;
   }
 
   .content {
     display: block;
     width: 80%;
-    margin: 150px auto 40px; /*look here*/
-    /*margin: 70px auto;*/
+    margin: auto;
     padding: 20px 50px;
     border-radius: 20px;
     text-align: justify;
   }
 
+
   .container {
     position: absolute;
     top: 13rem;
     left: 0rem;
-    background-color: #000;
     color: #000;
     padding: 20px;
     z-index: 3;
     margin: 20px auto;
+  }
+
+  section {
+    margin: 30px 0;
+  }
+
+  article {
+    margin: 30px 0;
+  }
+
+  .avatar {
+    width: 150px;
+    height: inherit;
+    border-radius: 50%;
+    float: left;
+    display: inline-table;
+    
+    /* Change the shape 
+    according to the image */
+    shape-outside: circle();
+    background-color: none;
+  }
+
+  #more {
+    display: none;
+  }
+
+  #dots {
+    content: "...";
+
   }
 
   .team {
@@ -344,27 +368,68 @@ nav {
 
   .footer {
     text-align: left justify;
-    background-color: var(--opaque-brand-color);
+    background-color: var(--footer);
     color: var(--ghostwhite);
     width: 100%;
-    margin: auto;
+    margin: 80px 0px 0px;
     padding: 50px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
 
+  /* News Timeline */
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+  }
+
+  ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: -1;
+  }
+
+  ul.timeline > li {
+    margin: 20px;
+    padding-left: 20px;
+  }
+
+  ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--team-color);
+    left: 23px;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+  }
 
   /* TEXT ATTRIBUTES */
   h1 {
-    font-size: 48px;
+    font-size: 3.5vw;
     color: var(--beige);
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     font-weight: 100;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 2.8vw;
     font-family: "Bebas Neue", Helvetica, sans-serif;
     font-weight: 100;
     color: var(--light-beige);
+  }
+
+  h3 {
+    font-size: 2.3vw;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    color: var(--ghostwhite);
   }
   
   p {
@@ -374,7 +439,7 @@ nav {
   
   em {
     font-family: "Caveat";
-    font-size: 18px;
+    font-size: 1.3vw;
     color: var(--brand-color)
   }
 
@@ -390,7 +455,7 @@ nav {
         rgba(0, 0, 0, 0),
         rgba(50, 50, 50, 0.5),
         rgba(0, 0, 0, 0));
-    margin: 20px;
+    margin: 10px 0px 15px;
   }
   
   blockquote {
@@ -434,13 +499,13 @@ nav {
   /* BOX SCROLL ANIMATION */
   .box {
     background-color: transparent;
-    margin: auto;
+    margin: 0px auto;
     padding: 10px 0;
     width: 100%;
     height: 100%;
     text-align: justify;
     transform: translateX(200%);
-    transition: transform 0.9s ease;
+    transition: transform 0.7s ease;
   }
   
   .box:nth-of-type(even) {
@@ -454,6 +519,26 @@ nav {
 
   /* MEDIA QUERIES */
 @media (max-width:600px) {
+
+    html {
+      font-size: 3.0vw;
+    }
+
+    h1 {
+      font-size: 7.0vw;
+    }
+    
+    h2 {
+      font-size: 6.0vw;
+    }
+
+    h3 {
+      font-size: 5.0vw;
+    }
+
+    em {
+      font-size: 3.5vw;
+    }
 
     /* nav {
       padding: 10px;
