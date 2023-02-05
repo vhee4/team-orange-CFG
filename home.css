@@ -342,6 +342,7 @@ nav {
     height: inherit;
     border-radius: 50%;
     float: left;
+    display: inline-table;
     
     /* Change the shape 
     according to the image */
@@ -409,7 +410,6 @@ nav {
     height: 10px;
     z-index: -1;
   }
-
 
   /* TEXT ATTRIBUTES */
   h1 {
@@ -539,7 +539,6 @@ nav {
     em {
       font-size: 3.5vw;
     }
-
 
     /* nav {
       padding: 10px;
