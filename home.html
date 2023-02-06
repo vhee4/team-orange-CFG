@@ -4,16 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Team Naranja: Website's Main Page</title>
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/favicon.svg">
+
 
     <!-- CSS LINK GOES HERE -->
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+    
+
 </head>
 
 <body>
+ <!-- Back to top button - displayed when the user scrolls down -->
+ 
+ <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img id="top" src="./assets/images/top-arrow.png" 
+    alt="up to top arrow" width="20" height="20">
+</button>
+
    <header>
     <nav>
     <div class="header_logo">
@@ -23,7 +39,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#members">Members</a></li>
+                <li><a href="Members.html">Members</a></li>
+
+
             </ul>
     </nav>
 
@@ -121,6 +139,9 @@
                       legislations that would make plastic less desirable.</li>
                    <li><em>Spread the word and spread awareness </em>- Be the voice of change!</li>
                 </ul>
+
+            
+
             
                 <blockquote>“All we have to do is to wake up and change.”<br><span class="quote_author">— Greta Thunberg</span></blockquote>
                 We believe the world is waking up. We believe that a lot of people are finally recognising that there is a need for change.
@@ -129,6 +150,7 @@
                 Every choice you make can have an impact, so if you can make conscious and wiser choices, <em>wouldn’t you?</em>
             </article>
             
+
             <article>
                 <hr>
                 <!-- <div class="box"> -->
@@ -221,22 +243,57 @@
                 <div class="column">
                   <h3>Follow us:</h2>
                     <div class="footer-social-links">
-                        <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
+
+                        <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fa fa-facebook" style="font-size:18px; color:white"></i></a>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i class="fa fa-instagram" style="font-size:18px;color:white"></i></a>
+                        <a href="https://github.com/Stellabam/team-orange-CFG" title="Github" target="_blank"><i class="fa fa-github" style="font-size:18px;color:white"></i></a>
+   <!-- Ignore these social icons 
                         <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
+                        <a href="#" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>-->
+
                       </div>
                 </div>
                 <div class="column">
-                    <!-- <div class="center"> -->
+
+              
                         <button id="open-subscribe-form">
                             Subscribe
                         </button>
                   <!-- <h3>Subscribe</h3> -->
-                  <p>Subscribe to our newsletter</p>
+                  <p>Please subscribe to learn more about our news and activities</p>
+
+             
+                  <div class="subscribe-form">
+                    <div class="left">
+                      <img src="./assets/images/recycle.gif" alt="" width="80%">
+                    </div>
+                    <div class="right">
+                      <h2>Subscribe to our newsletter!</h2>
+                      <p>Please subscribe to learn more about our news and activities.</p>
+                      <div class="form">
+                        <div class="input">
+                          <label for="email">Your Email</label>
+                          <input type="email" id="email" placeholder="john@gmail.com">
+                        </div>
+                        <div class="button">
+                          <button id="show-message">Subscribe</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="close-btn">
+                      &times;
+                    </button>
+                  </div>
+                  <div>
+                    <button id="open-subscribe-form">
+                      Subscribe
+                    </button>
+                  </div>
+
+               
+
                 </div>
-                <!-- </div> -->
+                
                 <p class="fix">Made with ❤️ by Team Orange for CFG Web Dev MOOC Challenge.</p>
         </section>
     
