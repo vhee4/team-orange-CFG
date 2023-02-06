@@ -5,25 +5,26 @@
 
 /* CUSTOM PROPERTIES */
 :root {
-    /* COLORS */
-    --brand-color: rgb(0, 112, 121);
-    --opaque-brand-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(61, 69, 34, 0.75);
-    --team-color: rgb(226, 160, 2);
-    --link-hover: rgb(255, 217, 102);
-    --white: #fff;
-    --ghostwhite: rgb(248, 248, 255);
-    --transparent: rgb(127,128,129, 0.75);
-    --grey: rgb(198, 198, 188);
-    --blue: rgb(203,209,207);
-    --green: rgb(105, 131, 105);
-    --beige: #8a7e6e;
-    --light-beige: #c1beae;
+  /* COLORS */
+  --brand-color: rgb(0, 112, 121);
+  --opaque-brand-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(61, 69, 34, 0.75);
+  --team-color: rgb(226, 160, 2);
+  --link-hover: rgb(255, 217, 102);
+  --white: #fff;
+  --ghostwhite: rgb(248, 248, 255);
+  --transparent: rgb(127,128,129, 0.75);
+  --grey: rgb(198, 198, 188);
+  --blue: rgb(203,209,207);
+  --green: rgb(105, 131, 105);
+  --beige: #8a7e6e;
+  --light-beige: #c1beae;
+  --nav: #fdfbf5;
+  --footer: rgba(0, 113, 121, 0.708);
 
-    /* SPEED */
-    --menu-speed: 0.75s;
+  /* SPEED */
+  --menu-speed: 0.75s;
 } 
-
 * {
     margin: 0;
     padding: 0;
@@ -800,3 +801,29 @@ nav {
 #top {
   filter: contrast(4);
 }
+
+
+#footer {
+  text-align: left justify;
+  background-color: var(--footer);
+  color: var(--ghostwhite);
+  width: 100%;
+  margin: 50px 0px 0px;
+  padding: 20px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
