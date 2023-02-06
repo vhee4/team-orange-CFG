@@ -311,10 +311,8 @@ nav {
 
   .content {
     display: block;
-    position: inherit;
     width: 80%;
     margin: auto;
-    /* padding: 50% 60px 3% 60px; check this */
    padding: 20px 50px 10px 50px;
     border-radius: 20px;
     text-align: justify;
@@ -333,10 +331,44 @@ nav {
     margin-top: 120px;
     }
 
-  .content_top img{
-    width: 40%;
-    border-radius: 50%;
-  }
+  .content_top img {
+       width: 40%;
+       border-radius: 50%;
+       animation: wiggle 2s linear infinite;
+     }
+  
+     @keyframes wiggle {
+  
+       0%,
+       7% {
+         transform: rotateZ(0);
+       }
+  
+       15% {
+         transform: rotateZ(-15deg);
+       }
+  
+       20% {
+         transform: rotateZ(10deg);
+       }
+  
+       25% {
+         transform: rotateZ(-10deg);
+       }
+  
+       30% {
+         transform: rotateZ(6deg);
+       }
+  
+       35% {
+         transform: rotateZ(-4deg);
+       }
+  
+       40%,
+       100% {
+         transform: rotateZ(0);
+       }
+     }
 
 
   .content_writeup{
@@ -376,7 +408,7 @@ nav {
   }
 
   .avatar {
-    width: 135px;
+    max-width: 135px;
     height: inherit;
     border-radius: 50%;
     float: left;
@@ -392,7 +424,7 @@ nav {
   }
 
   #footer {
-    text-align: left justify;
+    text-align: center;
     background-color: var(--footer);
     color: var(--ghostwhite);
     width: 100%;
@@ -407,6 +439,7 @@ nav {
       padding: 10px;
       margin-left: 20px;
       height: 100%;
+  text-align: center;
     }
     
     /* Clear floats after the columns */
@@ -551,10 +584,10 @@ nav {
 
   /* BOX SCROLL ANIMATION */
   .box {
-    background-color: rgb(226, 160, 60);
+    background-color: transparent;
     margin: 0 auto;
     padding: 10px 0;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     text-align: justify;
     transform: translateX(200%);
@@ -580,6 +613,12 @@ nav {
       border: none;
       border-radius: 3px;
     }
+
+        #open-subscribe-form:hover {
+          cursor: pointer;
+          color: var(--brand-color);
+          background-color: whitesmoke;
+        }
   
     .subscribe-form {
       position: fixed;
@@ -757,6 +796,16 @@ nav {
   width: 100%;
   padding: 0 10px;
   text-align: center;
+}
+.column {
+  width: 25%;
+
+}
+
+#open-subscribe-form {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
 }
 
 .subscribe-form {
