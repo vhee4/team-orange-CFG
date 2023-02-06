@@ -54,7 +54,10 @@ font-size: 14px;
   min-width: 100%;
   opacity: .9;
   z-index: -1;
+}
 
+.video[poster]{
+  object-fit: cover;
 }
 
 
@@ -319,7 +322,7 @@ a::before {
   display: none;
 }
 
-.container{
+.container {
   position: absolute;
   display: flex;
   /* padding: 20px; */
@@ -334,14 +337,13 @@ a::before {
   z-index: 3;
 }
 
-.container h1{
+.container h1 {
   font-size: 5rem;
   letter-spacing: .7rem;
   font-weight: 700;
 }
 
-
-.intro_sub ul{
+.intro_sub ul {
   display: flex;
   text-align: center;
 }
@@ -354,19 +356,21 @@ a::before {
   text-align: center;
 }
 
-
 .btn{
   padding: 10px 30px;
   margin: 20px 0;
 }
   
-button{
+button {
   cursor: pointer;
   border-radius: 40px;
   font-size: 1.1rem;
   border: none;
   background: var(--brand-color);
   transition: background .5s;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 100;
 }
 
 button:hover{
