@@ -69,7 +69,7 @@ nav {
 
 .header_logo > img {
   padding-top: 0.9375rem;
-    width: 6.25rem;
+  width: 100%;
   }
 
 .header_nav-list {
@@ -311,30 +311,30 @@ nav {
 
   .content {
     display: block;
-    width: 80%;
+    width: 60%;
     margin: auto;
-   padding: 1.25rem 3.125rem 0.625rem 3.125rem;
+    padding: 1.25rem 3.125rem 0.625rem 3.125rem;
     border-radius: 1.25rem;
     text-align: justify;
   }
 
-  .content_top{
+  .content_top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 3.125rem;
+    padding: 3.5rem 3.125rem;
     margin-bottom: 2.5rem;
-    font-family: "Indieflower";
+    font-family: "Indie Flower";
   }
 
     .content_top:nth-child(1) {
     margin-top: 7.5rem;
     }
 
-  .content_top img {
+    .content_top img {
        width: 40%;
        border-radius: 50%;
-       animation: wiggle 2s linear infinite;
+       animation: fade 2s linear infinite;
      }
   
      @keyframes wiggle {
@@ -371,7 +371,7 @@ nav {
      }
 
 
-  .content_writeup{
+  .content_writeup {
     width: 50%;
     text-align: center;
   }
@@ -398,6 +398,7 @@ nav {
     z-index: 3;
     margin: 1.25rem auto;
   }
+  
 
   section {
     margin: 1.875rem 0;
@@ -432,7 +433,7 @@ nav {
     padding: 1.25rem;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
-
+          /* FOOTER COLUMNS */ 
     .column {
       float: left;
       width: 30%;
@@ -449,13 +450,34 @@ nav {
       clear: both;
     }
 
+    .footer_socials a {
+      margin: auto;
+      padding: 5px;
+      color: var(--white);
+      font-size: 2vw;
+    }
+      
+      .footer_socials a::before {
+      background-color: transparent;
+      content: "";
+      inset: 0;
+      position: absolute;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s ease-in-out;
+      z-index: -1;
+      }
 
-  /* News Timeline */
+      .footer_socials a:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+        }
+
+
+  /* NEWS TIMELINE */
   ul.timeline {
     list-style-type: none;
     position: relative;
-
- 
   }
 
   ul.timeline:before {
@@ -488,8 +510,6 @@ nav {
   }
 
 
-
-
   /* TEXT ATTRIBUTES */
   h1 {
     font-size: 3.5vw;
@@ -503,12 +523,14 @@ nav {
     font-family: "Bebas Neue", Helvetica, sans-serif;
     font-weight: 100;
     color: var(--light-beige);
+    font-weight: 100;
   }
 
   h3 {
     font-size: 2.3vw;
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     color: var(--ghostwhite);
+    font-weight: 100;
   }
   
   p {
@@ -559,7 +581,7 @@ nav {
     float: right;
   }
 
-  a {
+    a {
     color: var(--green);
     position: relative;
     text-decoration: none;
@@ -572,7 +594,7 @@ nav {
     position: absolute;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     z-index: -1;
     }
     
@@ -588,13 +610,13 @@ nav {
   /* BOX SCROLL ANIMATION */
   .box {
     background-color: transparent;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0.625rem 0;
     max-width: 100%;
     height: 100%;
     text-align: justify;
-    transform: translateX(200%);
-    transition: transform 0.7s ease;
+    transform: translateX(-200%);
+    transition: transform 0.9s ease-in-out;
   }
   
   .box:nth-of-type(even) {
@@ -603,10 +625,10 @@ nav {
   
   .box.show {
     transform: translateX(0);
-    transition: all 0.7s;
+    transition: all 0.9s;
   }
 
-    /* FOR THE SUBSCRIBE BUTTON */
+  /* FOR THE SUBSCRIBE BUTTON */
     #open-subscribe-form {
       width: 9.375rem;
       height: 3.125rem;
@@ -658,7 +680,7 @@ nav {
       right: 0.625rem;
       font-size: 1.5625rem;
       color: rgb(255, 255, 255);
-      background-color: #E2A002;
+      background-color: var(--team-color);
       border: none;
       width: 2.1875rem;
       height: 2.1875rem;
@@ -711,7 +733,7 @@ nav {
       border: none;
       outline: none;
       cursor: pointer;
-      background: #0e5f77;
+      background: var(--brand-color);
       color: #fff;
       box-shadow: 0rem 0.125rem 0.125rem #ddd;
     }
@@ -732,7 +754,7 @@ nav {
     }
 
     main {
-      
+      width: 100%;
     }
 
     h1 {
@@ -762,8 +784,6 @@ nav {
       font-size: 2vw;
     }
 
-
-
   /* 
     .topnav {
       display: block;
@@ -783,17 +803,17 @@ nav {
         display: inline-flex;
     }
   
-  .content_top {
+    .content_top {
     flex-direction: column;
-  }
+    }
 
     .content_top img{
       width: 100%;
     }
 
-  .content_top:nth-child(2) {
+    .content_top:nth-child(2) {
     flex-direction: column-reverse;
-  }
+    }
 
 
 
@@ -805,7 +825,6 @@ nav {
 
 .column {
   width: 25%;
-
 }
 
 #open-subscribe-form {
@@ -818,9 +837,6 @@ nav {
   grid-template-columns: repeat(2, 1fr);
 }
   }
-
-  }
-
   
   /* Subscribe form styles */
   #open-subscribe-form {
@@ -868,7 +884,7 @@ nav {
     right: 10px;
     font-size: 25px;
     color: rgb(255, 255, 255);
-    background-color: #E2A002;
+    background-color: var(--team-color);
     border: none;
     width: 35px;
     height: 35px;
@@ -921,7 +937,7 @@ nav {
     border: none;
     outline: none;
     cursor: pointer;
-    background: #0e5f77;
+    background: var(--brand-color);
     color: #fff;
     box-shadow: 0px 2px 2px #ddd;
   }
@@ -955,7 +971,6 @@ nav {
   width: 80%;
 }
 
-
   /* Signup and login forms styles */
   .members-section {
     margin: 20rem 5rem 10rem 5rem;
@@ -979,9 +994,7 @@ nav {
 }
 
 .members-buttons > h3 {
-  color: #7a7373;
-  
-  
+  color: var(--beige);
 }
 
 .members-img{
@@ -1025,7 +1038,7 @@ nav {
   /* Extra styles for the cancel button */
   .cancelbtn {
     padding: 14px 20px;
-    background-color: #eb7f1b;
+    background-color: var(--team-color);
     border-style: none;
     border-radius: 5px;
   }
@@ -1059,10 +1072,10 @@ nav {
   }
   
   /* Style the horizontal ruler */
-  hr {
+  /* hr {
     border: 1px solid #0b5360;
     margin-bottom: 25px;
-  }
+  } */
   
   /* The Close Button (x) */
   .close {
@@ -1076,7 +1089,7 @@ nav {
   
   .close:hover,
   .close:focus {
-    color: #f44336;
+    color: var(--team-color);
     cursor: pointer;
   }
   
