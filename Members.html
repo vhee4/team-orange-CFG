@@ -14,6 +14,12 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img id="top" src="./assets/images/top-arrow.png" 
+    alt="up to top arrow" width="40" height="40">
+</button>
+</div>
+
    <header>
     <nav>
     <div class="header_logo">
@@ -23,7 +29,7 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
-                <li><a href="">Sign up</a></li>
+                <li><a href="">Members</a></li>
             </ul>
     </nav>
 
@@ -38,7 +44,7 @@
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Members</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
@@ -48,17 +54,31 @@
     </header>   
 
     
-        <div class="buttons">
-            <h2>Let's connect!</h2>
+        <section class="members-section">
+
+          <div class="members-container">
+        <div class="members-buttons">  
+            <h2 class="members-heading">Let's connect!</h2>
             <h3>Would you like to become a member of our community.</h3>
-            <h4>Wait no more! Sign up now!</h4>
-            
+            <br>
+            <h3>Wait no more! Sign up now!</h3>
+            <br>
+          
              <!-- Signup and Login Buttons -->
             
             <button class="form-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+            <br>
+            <br>
             <p>Do you already have an account? Login now. </p>
             <button class="form-btn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
-            
+        </div>
+        
+        <div class="members-img">
+          <img src="./assets/images/member-313.png">
+        </div>
+      </div>
+        </section>
+
             <!-- Signup form modal -->
             <div id="id01" class="signup-modal">
               <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>

@@ -489,12 +489,35 @@ nav {
   
   }
 
+
   /* Signup and login forms styles */
-.buttons{
-    margin: 20rem 10rem 10rem 10rem;
-    
+  .members-section {
+    margin: 20rem 5rem 10rem 5rem;
+  }
+
+.members-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+.members-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.members-heading {
+  color:#0b5360;
+}
+
+
+.members-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
   
   /* Full-width input fields */
   input[type=text], input[type=password] {
@@ -755,3 +778,25 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  
+/* "Back to top of the page" button*/
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(226, 160, 2);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#top {
+  filter: contrast(4);
+}
