@@ -431,6 +431,8 @@ nav {
   ul.timeline {
     list-style-type: none;
     position: relative;
+
+ 
   }
 
   ul.timeline:before {
@@ -461,6 +463,7 @@ nav {
     height: 10px;
     z-index: -1;
   }
+
 
 
 
@@ -618,6 +621,8 @@ nav {
       font-size: 2vw;
     }
 
+
+
   /* 
     .topnav {
       display: block;
@@ -657,3 +662,318 @@ nav {
   text-align: center;
 }
   }
+
+  
+  /* Subscribe form styles */
+  #open-subscribe-form {
+    width: 8rem;
+    height: 3.5rem;
+    background-color: #E2A002;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .subscribe-form {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.15);
+    width: calc(100% - 20px);
+    max-width: 650px;
+    background: #fff;
+    border-radius: 10px;
+    display: grid;
+    gap: 10px;
+    padding: 50px 40px 40px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+    opacity: 0;
+    transition: top 0ms ease-in-out 300ms,
+      transform 300ms ease-in-out 0ms,
+      opacity 300ms ease-in-out 0ms;
+  }
+  
+  .subscribe-form.active {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: top 0ms ease-in-out 0ms,
+      transform 300ms ease-in-out 0ms,
+      opacity 300ms ease-in-out 0ms;
+  }
+  
+  .subscribe-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: #E2A002;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .subscribe-form .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .subscribe-form .right h2 {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.15;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  
+  .subscribe-form .right p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe-form .right .form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  
+  .subscribe-form .right .form .input {
+    margin-bottom: 10px;
+  }
+  
+  .subscribe-form .right .form input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(25, 117, 142);
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  
+  .subscribe-form .right .form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #0e5f77;
+    color: #fff;
+    box-shadow: 0px 2px 2px #ddd;
+  }
+  
+  @media(min-width: 680px) {
+    .subscribe-form {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
+/* "Back to top of the page" button*/
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(226, 160, 2);
+  cursor: pointer;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+#top {
+  filter: contrast(4);
+  width: 80%;
+}
+
+
+  /* Signup and login forms styles */
+  .members-section {
+    margin: 20rem 5rem 10rem 5rem;
+  }
+
+.members-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.members-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.members-heading {
+  color:#0b5360;
+}
+
+.members-buttons > h3 {
+  color: #7a7373;
+  
+  
+}
+
+.members-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(223, 237, 236);
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+  .form-btn, .signup-btn {
+    background-color: rgb(0, 112, 121);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #eb7f1b;
+    border-style: none;
+    border-radius: 5px;
+  }
+  
+  
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signup-btn {
+    float: left;
+    width: 48%;
+    margin: 2px;
+  }
+  
+  /* Add padding to container elements */
+  .form-container {
+    padding: 16px;
+  }
+  
+  
+  /* Modal Content/Box */
+  .modal-content {
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.05);
+  
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #0b5360;
+    margin-bottom: 25px;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f9f7f5;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+  
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
+  /* The Modal (background) */
+  .signup-modal, .login-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(3, 104, 125);
+    padding-top: 50px;
+  }
+  
+  
+
+  
+
