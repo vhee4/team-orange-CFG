@@ -83,15 +83,15 @@ nav {
 .header_nav-list li a {
     text-decoration: none;
     background: none;
-    margin-right: 2.5rem;
+    margin-right: 40px;
     position: relative;
     color: var(--brand-color);
     font-size: 1.2vw;
     list-style: none;
     justify-content: space-around;
-    border: 0.0625rem double var(--brand-color);
-    padding: 0.3125rem;
-    box-shadow: 0.1875rem 0.125rem var(--team-color);
+    border: 1px double var(--brand-color);
+    padding: 5px;
+    box-shadow: 3px 2px var(--team-color);
     text-transform: capitalize;
   
 }
@@ -99,13 +99,13 @@ nav {
 .header_nav-list li a:hover {
   transform: none;
   text-decoration: none;
-  margin-right: 2.5rem;
+  margin-right: 40px;
   position: relative;
   color: var(--team-color);
   /* font-weight: 500; */
   list-style-type: none;
   justify-content: space-between;
-  border: 0.0625rem solid var(--light-beige);
+  border: 1px solid var(--light-beige);
 }
 
   a::before {
@@ -134,7 +134,7 @@ nav {
 /* HAMBURGER MENU BAR */
 .menu-wrap {
     position: fixed;
-    top: 1.25rem;
+    top: 20px;
     right: 0;
     z-index: 1;
     display: none;
@@ -142,23 +142,23 @@ nav {
   
   .menu-wrap .toggler {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
+    top: 20px;
+    right: 20px;
     z-index: 2;
     cursor: pointer;
-    width: 4.0625rem; /* ch*/
-    height: 1.875rem; /* ch*/
+    width: 65px; /* ch*/
+    height: 30px; /* ch*/
     opacity: 0;
   }
   
   .menu-wrap .hamburger {
     position: absolute;
-    top: 0.9375rem; /* ch*/
-    right: 1.25rem; /* ch*/
+    top: 15px; /* ch*/
+    right: 20px; /* ch*/
     z-index: 1;
-    width: 4.0625rem;
-    height: 1.875rem;
-    padding: 16px;
+    width: 65px;
+    height: 30px;
+    padding: 1rem;
     background: transparent;
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@ nav {
     position: relative;
     flex: none;
     width: 100%;
-    height: 0.125rem;
+    height: 2px;
     background: var(--team-color);
     display: flex;
     align-items: center;
@@ -184,15 +184,15 @@ nav {
     content: "";
     position: absolute;
     z-index: 1;
-    top: -0.625rem;
+    top: -10px;
     width: 100%;
-    height: 0.125rem;
+    height: 2px;
     background: inherit;
   }
   
   /* Moves Line Down */
   .menu-wrap .hamburger>div::after {
-    top: 0.625rem;
+    top: 10px;
   }
   
   /* Toggler Animation */
@@ -242,7 +242,7 @@ nav {
   
   .menu-wrap .menu>div {
     background-color: var(--opaque-brand-color);
-    backdrop-filter: blur(0.1875rem);
+    backdrop-filter: blur(3px);
     border-radius: 50%;
     width: 400vw;
     height: 400vw;
@@ -265,12 +265,12 @@ nav {
   .menu-wrap .menu>div>div>ul>li {
     list-style: none;
     text-align: center;
-    font-size: 16px;
-    padding: 16px;
+    font-size: 1rem;
+    padding: 1rem;
     /* color: var(--green); */
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    /* font-size: 40px;
-    margin-top: 96px;
+    /* font-size: 2.5rem;
+    margin-top: 6rem;
     color: #fff; */
 
   }
@@ -298,7 +298,7 @@ nav {
   .main {
     /* color: rgb(0,0,0); */
     background-color: var(--nav);
-    padding: 1.25rem;
+    padding: 20px;
     margin: auto;
   }
 
@@ -306,12 +306,12 @@ nav {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0.625rem;
+    padding: 10px;
   }
 
   .content {
     display: block;
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 1.25rem 3.125rem 0.625rem 3.125rem;
     border-radius: 1.25rem;
@@ -392,39 +392,39 @@ nav {
   }
 
     .content_top p {
-      font-size: 3.75rem;
-      margin-bottom: 0.9375rem;
+      font-size: 60px;
+      margin-bottom: 15px;
       color: var(--brand-color);
     }
 
         .content_top small {
-          font-size: 1rem;
-          line-height: 2.1875rem;
+          font-size: 16px;
+          line-height: 35px;
           color: rgb(138, 126, 110);
         }
 
 
   .container {
     position: absolute;
-    top: 208px;
-    left: 0px;
+    top: 13rem;
+    left: 0rem;
     color: #000;
-    padding: 1.25rem;
+    padding: 20px;
     z-index: 3;
-    margin: 1.25rem auto;
+    margin: 20px auto;
   }
   
 
   section {
-    margin: 1.875rem 0;
+    margin: 30px 0;
   }
 
   article {
-    margin: 1.875rem 0;
+    margin: 30px 0;
   }
 
   .avatar {
-    max-width: 8.4375rem;
+    width: 150px;
     height: inherit;
     border-radius: 50%;
     float: left;
@@ -444,15 +444,15 @@ nav {
     background-color: var(--footer);
     color: var(--ghostwhite);
     width: 100%;
-    margin: 3.125rem 0rem 0rem;
-    padding: 1.25rem;
+    margin: 50px 0px 0px;
+    padding: 20px;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
           /* FOOTER COLUMNS */ 
     .column {
       float: left;
       width: 30%;
-      padding: 0.625rem;
+      padding: 10px;
       margin-left: 1.25rem;
       height: 100%;
   text-align: center;
