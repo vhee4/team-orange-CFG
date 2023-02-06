@@ -36,38 +36,7 @@ function checkBoxes() {
 
 
 
-
-
-document
-  .querySelector("#open-subscribe-form")
-  .addEventListener("click", function () {
-    document.querySelector(".subscribe-form").classList.add("active");
-  });
-
-document
-  .querySelector(".subscribe-form .close-btn")
-  .addEventListener("click", function () {
-    document.querySelector(".subscribe-form").classList.remove("active");
-  });
-
-// Display thank you for subscribing message
-document.getElementById("show-message").addEventListener("click", function () {
-  alert("Thank you for subscribing");
-});
-
-// Get the modal for Sign up and Login forms
-var modal1 = document.getElementById("id01");
-var modal2 = document.getElementById("id02");
-
-// Display "thank you for signing up" message
-document.getElementById("signup").addEventListener("click", function () {
-  alert("Thank you for Signing up");
-});
-
-
-
-
-// Get the button:
+// Back to top button:
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -88,3 +57,36 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+// Subscribe form - open and close form
+document
+  .querySelector("#open-subscribe-form")
+  .addEventListener("click", function () {
+    document.querySelector(".subscribe-form").classList.add("active");
+  });
+
+document
+  .querySelector(".subscribe-form .close-btn")
+  .addEventListener("click", function () {
+    document.querySelector(".subscribe-form").classList.remove("active");
+  });
+
+// Display thank you for subscribing message
+document.getElementById("show-message").addEventListener("click", function () {
+  alert("Thank you for subscribing");
+});
+
+// Signup and Login forms
+// Get the modal for Sign up and Login forms
+var modal1 = document.getElementById("id01");
+var modal2 = document.getElementById("id02");
+
+// Display "thank you for signing up" message
+document.getElementById("signup").addEventListener("click", function () {
+  alert("Thank you for Signing up");
+});
+
+
+
+

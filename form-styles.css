@@ -773,12 +773,7 @@ nav {
     }
   }
   
-  .center {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  
 
   
 /* "Back to top of the page" button*/
