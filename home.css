@@ -431,6 +431,8 @@ nav {
   ul.timeline {
     list-style-type: none;
     position: relative;
+
+ 
   }
 
   ul.timeline:before {
@@ -461,6 +463,7 @@ nav {
     height: 10px;
     z-index: -1;
   }
+
 
 
 
@@ -618,8 +621,8 @@ nav {
       font-size: 2vw;
     }
 
-    
- 
+
+
   /* 
     .topnav {
       display: block;
@@ -971,3 +974,6 @@ nav {
   }
   
   
+
+  
+

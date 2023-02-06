@@ -52,6 +52,7 @@ function myFunction() {
 
 
 
+
 // Back to top button:
 let mybutton = document.getElementById("myBtn");
 
@@ -102,3 +103,4 @@ var modal2 = document.getElementById("id02");
 document.getElementById("signup").addEventListener("click", function () {
   alert("Thank you for Signing up");
 });
+
