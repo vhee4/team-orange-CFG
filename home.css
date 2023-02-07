@@ -849,11 +849,12 @@ nav {
 }
 
 .subscribe-form {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+ 
 }
   }
   
-  /* Subscribe form styles */
+  /* Subscribe form styles - This has to be deleted - 
   #open-subscribe-form {
     width: 8rem;
     height: 3.5rem;
@@ -956,10 +957,13 @@ nav {
     color: #fff;
     box-shadow: 0px 2px 2px #ddd;
   }
-  
+  */
+
   @media(min-width: 680px) {
     .subscribe-form {
       grid-template-columns: repeat(2, 1fr);
+      width: calc(100% - 1.25rem);
+      max-width: 30rem;
     }
   }
   
@@ -1049,6 +1053,8 @@ nav {
   button:hover {
     opacity: 0.8;
   }
+
+  
   
   /* Extra styles for the cancel button */
   .cancelbtn {
