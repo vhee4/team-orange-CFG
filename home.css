@@ -455,7 +455,7 @@ nav {
       padding: 10px;
       margin-left: 1.25rem;
       height: 100%;
-  text-align: center;
+      text-align: center;
     }
     
     /* Clear floats after the columns */
@@ -468,19 +468,19 @@ nav {
     .footer_socials a {
       margin: auto;
       padding: 5px;
-      color: var(--white);
+      color: var(--ghostwhite);
       font-size: 2vw;
     }
       
       .footer_socials a::before {
       background-color: transparent;
-      content: "";
+      /* content: "";
       inset: 0;
       position: absolute;
       transform: scaleX(0);
       transform-origin: right;
       transition: transform 0.5s ease-in-out;
-      z-index: -1;
+      z-index: -1; */
       }
 
       .footer_socials a:hover::before {
@@ -569,7 +569,7 @@ nav {
     height: 0.0625rem;
     background-image: linear-gradient(to right,
         rgba(0, 0, 0, 0),
-        rgba(50, 50, 50, 0.5),
+        var(--beige),
         rgba(0, 0, 0, 0));
     margin: 0.625rem 0rem 0.9375rem;
   }
@@ -799,6 +799,14 @@ nav {
       font-size: 2vw;
     }
 
+    .footer_socials a {
+      font-size: 4.0vw;
+    }
+
+    .content {
+      width: 90%;
+    }
+
   /* 
     .topnav {
       display: block;
@@ -837,10 +845,10 @@ nav {
   padding: 0 0.625rem;
   text-align: center;
 }
-
+/* 
 .column {
   width: 25%;
-}
+} */
 
 #open-subscribe-form {
   width: 5rem;
@@ -1063,7 +1071,6 @@ nav {
     border-style: none;
     border-radius: 5px;
   }
-  
   
   
   /* Float cancel and signup buttons and add an equal width */
