@@ -48,6 +48,105 @@ html {
   'opsz' 48
 }
 
+/* WELCOME PAGE start */
+
+.video_wrap {
+  position: relative;
+  height: 100vh;
+}
+
+.video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: .9;
+  z-index: -1;
+}
+
+.video[poster] {
+  object-fit: cover;
+}
+
+.welcome_page {
+  position: absolute;
+  display: flex;
+  /* padding: 20px; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  color: var(--white);
+  z-index: 3;
+}
+
+.welcome_page h1 {
+  font-size: 5rem;
+  letter-spacing: .7rem;
+  font-weight: 700;
+  color: var(--team-color);
+}
+
+.intro_sub ul {
+  display: flex;
+  text-align: center;
+}
+
+.intro_sub ul li {
+  margin-right: 40px;
+  list-style: none;
+  color: var(--ghostwhite);
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 30px;
+  margin: 20px 0;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  border: none;
+  background: var(--brand-color);
+  transition: background .5s;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.welcome_page>button:hover {
+  background-color: var(--opaque-brand-color);
+  box-shadow: 0 10px 20px var(--white) .2;
+}
+
+.welcome_page>button>a {
+  text-decoration: none;
+}
+
+.welcome_page>button>a:hover {
+  cursor: pointer;
+  color: white;
+  background-color: none;
+}
+
+.welcome_page>button>a::before {
+  display: none;
+}
+
+.btn-white {
+  background-color: white;
+  color: grey;
+}
+
+/* WELCOME PAGE ends */
+
 
 /* NAVIGATION BAR */
 nav {
