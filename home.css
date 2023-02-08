@@ -785,7 +785,16 @@ nav {
     }
 
     em {
-      font-size: 3.5vw;
+      font-size: 4.0vw;
+    }
+
+    blockquote {
+      font-size: 4.0vw;
+    }
+
+    .quote_author {
+      margin-top: 3px;
+      font-size: 2.3vw;
     }
   
     .header_nav-list {
@@ -805,6 +814,7 @@ nav {
 
     .content {
       width: 90%;
+      font-size: 3.0vw;
     }
 
   /* 
