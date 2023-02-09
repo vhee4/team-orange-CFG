@@ -744,13 +744,14 @@ nav {
 
   /* FOR THE SUBSCRIBE BUTTON */
     #open-subscribe-form {
-      width: 9.375rem;
+      width: 10rem;
       height: 3.125rem;
       background-color: #E2A002;
       color: #fff;
       font-size: 1.25rem;
       border: none;
       border-radius: 0.1875rem;
+      letter-spacing: normal;
     }
 
         #open-subscribe-form:hover {
@@ -962,7 +963,8 @@ nav {
 #open-subscribe-form {
   width: 5rem;
   height: 1.875rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
+letter-spacing: normal;
 }
 
 .subscribe-form {
