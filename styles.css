@@ -48,26 +48,20 @@ html {
   'opsz' 48
 }
 
-/* WELCOME PAGE start */
+/* WELCOME PAGE starts */
 
-.video_wrap {
-  position: relative;
-  height: 100vh;
+.image_wrap{
+  max-height: 100vh;
 }
 
-.video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-height: 100%;
-  min-width: 100%;
-  opacity: .9;
-  z-index: -1;
+.image_wrap>img {
+  max-height: 100vh;
+  max-width: 100vw;
+  background-size: contain;
+  padding: 0;
+  margin: 0;
 }
 
-.video[poster] {
-  object-fit: cover;
-}
 
 .welcome_page {
   position: absolute;
@@ -97,7 +91,7 @@ html {
 }
 
 .intro_sub ul li {
-  margin-right: 40px;
+  margin-right: 2.5rem;
   list-style: none;
   color: var(--ghostwhite);
   font-size: 18px;
@@ -105,25 +99,25 @@ html {
 }
 
 .btn {
-  padding: 10px 30px;
-  margin: 20px 0;
+  padding: 0.625rem 1.875rem;
+  margin: 1.25rem 0;
 }
 
 button {
   cursor: pointer;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   font-size: 1.1rem;
   border: none;
   background: var(--brand-color);
   transition: background .5s;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
   font-weight: 100;
 }
 
 .welcome_page>button:hover {
   background-color: var(--opaque-brand-color);
-  box-shadow: 0 10px 20px var(--white) .2;
+  box-shadow: 0 0.625rem 1.25rem var(--white) .2;
 }
 
 .welcome_page>button>a {
@@ -182,15 +176,15 @@ nav {
 .header_nav-list li a {
     text-decoration: none;
     background: none;
-    margin-right: 40px;
+    margin-right: 2.5rem;
     position: relative;
     color: var(--brand-color);
     font-size: 1.2vw;
     list-style: none;
     justify-content: space-around;
     border: 1px double var(--brand-color);
-    padding: 5px;
-    box-shadow: 3px 2px var(--team-color);
+    padding: 0.3125rem;
+    box-shadow: 0.1875rem 0.125rem var(--team-color);
     text-transform: capitalize;
   
 }
@@ -198,7 +192,7 @@ nav {
 .header_nav-list li a:hover {
   transform: none;
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 2.5rem;
   position: relative;
   color: var(--team-color);
   /* font-weight: 500; */
@@ -233,7 +227,7 @@ nav {
 /* HAMBURGER MENU BAR */
 .menu-wrap {
     position: fixed;
-    top: 20px;
+    top: 1.25rem;
     right: 0;
     z-index: 1;
     display: none;
@@ -241,22 +235,22 @@ nav {
   
   .menu-wrap .toggler {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
     z-index: 2;
     cursor: pointer;
-    width: 65px; /* ch*/
-    height: 30px; /* ch*/
+    width: 4.0625rem; /* ch*/
+    height: 1.875rem; /* ch*/
     opacity: 0;
   }
   
   .menu-wrap .hamburger {
     position: absolute;
-    top: 15px; /* ch*/
-    right: 20px; /* ch*/
+    top: 0.9375rem; /* ch*/
+    right: 1.25rem; /* ch*/
     z-index: 1;
-    width: 65px;
-    height: 30px;
+    width: 4.0625rem;
+    height: 1.875rem;
     padding: 1rem;
     background: transparent;
     display: flex;
@@ -269,7 +263,7 @@ nav {
     position: relative;
     flex: none;
     width: 100%;
-    height: 2px;
+    height: 0.125rem;
     background: var(--team-color);
     display: flex;
     align-items: center;
@@ -283,15 +277,15 @@ nav {
     content: "";
     position: absolute;
     z-index: 1;
-    top: -10px;
+    top: -0.625rem;
     width: 100%;
-    height: 2px;
+    height: 0.125rem;
     background: inherit;
   }
   
   /* Moves Line Down */
   .menu-wrap .hamburger>div::after {
-    top: 10px;
+    top: 0.625rem;
   }
   
   /* Toggler Animation */
@@ -341,7 +335,7 @@ nav {
   
   .menu-wrap .menu>div {
     background-color: var(--opaque-brand-color);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(0.1875rem);
     border-radius: 50%;
     width: 400vw;
     height: 400vw;
@@ -384,7 +378,7 @@ nav {
   .menu-wrap .menu>div>div>ul>li>a:hover {
     color: var(--brand-color);
     font-weight: 600;
-    padding: 4.8px;
+    padding: 0.3rem;
   }
 
 
@@ -397,7 +391,7 @@ nav {
   .main {
     /* color: rgb(0,0,0); */
     background-color: var(--nav);
-    padding: 20px;
+    padding: 1.25rem;
     margin: auto;
   }
 
@@ -405,12 +399,12 @@ nav {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0.625rem;
   }
 
   .content {
     display: block;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 1.25rem 3.125rem 0.625rem 3.125rem;
     border-radius: 1.25rem;
@@ -421,7 +415,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3.5rem 3.125rem;
+    margin: auto;
+    width: 90%;
+    padding: 3.5rem 2.125rem;
     margin-bottom: 2.5rem;
     font-family: "Indie Flower";
   }
@@ -491,14 +487,14 @@ nav {
   }
 
     .content_top p {
-      font-size: 60px;
-      margin-bottom: 15px;
+      font-size: 3.75rem;
+      margin-bottom: 0.9375rem;
       color: var(--brand-color);
     }
 
         .content_top small {
-          font-size: 16px;
-          line-height: 35px;
+          font-size: 1rem;
+          line-height: 2.1875rem;
           color: rgb(138, 126, 110);
         }
 
@@ -508,22 +504,22 @@ nav {
     top: 13rem;
     left: 0rem;
     color: #000;
-    padding: 20px;
+    padding: 1.25rem;
     z-index: 3;
-    margin: 20px auto;
+    margin: 1.25rem auto;
   }
   
 
   section {
-    margin: 30px 0;
+    margin: 1.875rem 0;
   }
 
   article {
-    margin: 30px 0;
+    margin: 1.875rem 0;
   }
 
   .avatar {
-    width: 150px;
+    width: 9.375rem;
     height: inherit;
     border-radius: 50%;
     float: left;
@@ -543,15 +539,15 @@ nav {
     background-color: var(--footer);
     color: var(--ghostwhite);
     width: 100%;
-    margin: 50px 0px 0px;
-    padding: 20px;
+    margin: 3.125rem 0rem 0rem;
+    padding: 1.25rem;
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
   }
           /* FOOTER COLUMNS */ 
     .column {
       float: left;
       width: 30%;
-      padding: 10px;
+      padding: 0.625rem;
       margin-left: 1.25rem;
       height: 100%;
       text-align: center;
@@ -566,20 +562,13 @@ nav {
 
     .footer_socials a {
       margin: auto;
-      padding: 5px;
+      padding: 0.3125rem;
       color: var(--ghostwhite);
       font-size: 2vw;
     }
       
       .footer_socials a::before {
       background-color: transparent;
-      /* content: "";
-      inset: 0;
-      position: absolute;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.5s ease-in-out;
-      z-index: -1; */
       }
 
       .footer_socials a:hover::before {
@@ -724,7 +713,7 @@ nav {
   /* BOX SCROLL ANIMATION */
   .box {
     background-color: transparent;
-    margin: 20px auto;
+    margin: 1.25rem auto;
     padding: 0.625rem 0;
     max-width: 100%;
     height: 100%;
@@ -1093,15 +1082,15 @@ letter-spacing: normal;
   display: none;
   /* Hidden by default */
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0.625rem;
+  right: 0.625rem;
   z-index: 99;
   border: none;
   outline: none;
   background-color: rgb(226, 160, 2);
   cursor: pointer;
   padding: 0.2rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 #top {
@@ -1144,8 +1133,8 @@ letter-spacing: normal;
   /* Full-width input fields */
   input[type=text], input[type=password] {
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    padding: 0.9375rem;
+    margin: 0.3125rem 0 1.375rem 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -1161,10 +1150,10 @@ letter-spacing: normal;
   .form-btn, .signup-btn {
     background-color: rgb(0, 112, 121);
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 0.875rem 1.25rem;
+    margin: 0.5rem 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
     opacity: 0.9;
   }
@@ -1177,10 +1166,10 @@ letter-spacing: normal;
   
   /* Extra styles for the cancel button */
   .cancelbtn {
-    padding: 14px 20px;
+    padding: 0.875rem 1.25rem;
     background-color: var(--team-color);
     border-style: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
   }
   
   
@@ -1188,12 +1177,12 @@ letter-spacing: normal;
   .cancelbtn, .signup-btn {
     float: left;
     width: 48%;
-    margin: 2px;
+    margin: 0.125rem;
   }
   
   /* Add padding to container elements */
   .form-container {
-    padding: 16px;
+    padding: 1rem;
   }
   
   
@@ -1205,8 +1194,8 @@ letter-spacing: normal;
     width: 60%;
     /* Could be more or less, depending on screen size */
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.625rem;
+    box-shadow: 0rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.05);
   
   }
   
@@ -1219,9 +1208,9 @@ letter-spacing: normal;
   /* The Close Button (x) */
   .close {
     position: absolute;
-    right: 50px;
-    top: 50px;
-    font-size: 40px;
+    right: 3.125rem;
+    top: 3.125rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #f9f7f5;
   }
@@ -1248,7 +1237,7 @@ letter-spacing: normal;
   
   span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 1rem;
   }
   
   /* Change styles for span and cancel button on extra small screens */
@@ -1280,5 +1269,6 @@ letter-spacing: normal;
     overflow: auto;
     /* Enable scroll if needed */
     background-color: rgba(3, 104, 125);
-    padding-top: 50px;
+    padding-top: 3.125rem;
   }
+
