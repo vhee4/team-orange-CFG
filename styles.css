@@ -960,110 +960,6 @@ nav {
 }
   }
   
-  /* Subscribe form styles - This has to be deleted - 
-  #open-subscribe-form {
-    width: 8rem;
-    height: 3.5rem;
-    background-color: #E2A002;
-    color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  .subscribe-form {
-    position: fixed;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.15);
-    width: calc(100% - 20px);
-    max-width: 650px;
-    background: #fff;
-    border-radius: 10px;
-    display: grid;
-    gap: 10px;
-    padding: 50px 40px 40px;
-    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.05);
-    z-index: 2;
-    opacity: 0;
-    transition: top 0ms ease-in-out 300ms,
-      transform 300ms ease-in-out 0ms,
-      opacity 300ms ease-in-out 0ms;
-  }
-  
-  .subscribe-form.active {
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    transition: top 0ms ease-in-out 0ms,
-      transform 300ms ease-in-out 0ms,
-      opacity 300ms ease-in-out 0ms;
-  }
-  
-  .subscribe-form .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    background-color: var(--team-color);
-    border: none;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .subscribe-form .left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .subscribe-form .right h2 {
-    font-size: 28px;
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.15;
-    margin-bottom: 10px;
-    color: #111;
-  }
-  
-  .subscribe-form .right p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 15px;
-  }
-  
-  .subscribe-form .right .form label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 15px;
-  }
-  
-  .subscribe-form .right .form .input {
-    margin-bottom: 10px;
-  }
-  
-  .subscribe-form .right .form input {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid rgb(25, 117, 142);
-    font-size: 17px;
-    border-radius: 5px;
-  }
-  
-  .subscribe-form .right .form button {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: var(--brand-color);
-    color: #fff;
-    box-shadow: 0px 2px 2px #ddd;
-  }
-  */
 
   @media(min-width: 680px) {
     .subscribe-form {
@@ -1097,15 +993,17 @@ nav {
 }
 
   /* Signup and login forms styles */
+  /* .fig{
+  } */
   .members-section {
     margin: 20rem 5rem 10rem 5rem;
   }
-
-.members-container{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  
+  .members-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .members-buttons {
