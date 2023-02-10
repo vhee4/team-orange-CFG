@@ -1072,7 +1072,7 @@ letter-spacing: normal;
   
   /* Modal Content/Box */
   .modal-content {
-    margin: 5% auto 15% auto;
+    margin: 15% auto 15% auto;
     /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 60%;
@@ -1081,6 +1081,10 @@ letter-spacing: normal;
     border-radius: 0.625rem;
     box-shadow: 0rem 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.05);
   
+  }
+
+  .login-modal .modal-content:last-of-type{
+    margin: 30% auto 15% auto;
   }
   
   /* Style the horizontal ruler */
