@@ -55,9 +55,9 @@ html {
 }
 
 .image_wrap>img {
-  max-height: 100vh;
+  height: 100vh;
   max-width: 100vw;
-  background-size: contain;
+  background-size: cover;
   padding: 0;
   margin: 0;
 }
