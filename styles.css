@@ -905,21 +905,13 @@ nav {
       width: 90%;
       font-size: 3.0vw;
     }
-
-  /* 
-    .topnav {
-      display: block;
-    } */
   
     .wrap {
       position: relative;
       max-height: 60vh;
       min-width: 100vw;
     }
-  
-    /* .video {
-      bottom: 0;
-    } */
+
   
     .menu-wrap {
         display: inline-flex;
@@ -1006,6 +998,7 @@ letter-spacing: normal;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    font-size: 18px;
 }
 
 .members-buttons {
@@ -1028,6 +1021,12 @@ letter-spacing: normal;
   justify-content: flex-end;
 }
   
+@media (max-width:680px) {
+  .members-buttons {
+     margin-bottom: 5rem;
+    }
+}
+
   /* Full-width input fields */
   input[type=text], input[type=password] {
     width: 100%;
