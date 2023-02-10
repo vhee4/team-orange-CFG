@@ -373,6 +373,7 @@ nav {
     color: white;
     position: relative;
     text-decoration: none;
+    font-size: 2rem;
     transition: color 0.5s ease;
   }
   
@@ -843,12 +844,65 @@ nav {
       box-shadow: 0rem 0.125rem 0.125rem #ddd;
     }
 
-        @media(max-width: 42.5rem) {
-          
+        /* "Back to top of the page" button*/
+    
+        #myBtn {
+          display: none;
+          /* Hidden by default */
+          position: fixed;
+          bottom: 0.625rem;
+          right: 0.625rem;
+          z-index: 99;
+          border: none;
+          outline: none;
+          background-color: rgb(226, 160, 2);
+          cursor: pointer;
+          padding: 0.2rem;
+          border-radius: 0.625rem;
+        }
+    
+        #top {
+          filter: contrast(4);
+          width: 80%;
+        }
+    
+        /* Signup and login forms styles */
+        /* .fig{
+      } */
+        .members-section {
+          margin: 20rem 5rem 10rem 5rem;
+        }
+    
+        .members-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          font-size: 18px;
+        }
+    
+        .members-buttons {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+    
+        .members-heading {
+          color: #0b5360;
+        }
+    
+        .members-buttons>h3 {
+          color: var(--beige);
+        }
+    
+        .members-img {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
         }
 
   /* MEDIA QUERIES */
-@media (max-width:37.5rem) {
+@media (max-width:680px) {
 
     html {
       font-size: 2.5vw;
@@ -937,10 +991,6 @@ nav {
   padding: 0 0.625rem;
   text-align: center;
 }
-/* 
-.column {
-  width: 25%;
-} */
 
 #open-subscribe-form {
   width: 5rem;
@@ -953,81 +1003,17 @@ letter-spacing: normal;
   grid-template-columns: repeat(1, 1fr);
  
 }
-  }
   
-
-  @media(min-width: 680px) {
-    .subscribe-form {
-      grid-template-columns: repeat(2, 1fr);
-      width: calc(100% - 1.25rem);
-      max-width: 30rem;
-    }
-  }
-  
-  
-/* "Back to top of the page" button*/
-
-#myBtn {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  bottom: 0.625rem;
-  right: 0.625rem;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: rgb(226, 160, 2);
-  cursor: pointer;
-  padding: 0.2rem;
-  border-radius: 0.625rem;
+.subscribe-form {
+  grid-template-columns: repeat(2, 1fr);
+  width: calc(100% - 1.25rem);
+  max-width: 30rem;
 }
-
-#top {
-  filter: contrast(4);
-  width: 80%;
-}
-
-  /* Signup and login forms styles */
-  /* .fig{
-  } */
-  .members-section {
-    margin: 20rem 5rem 10rem 5rem;
-  }
-  
-  .members-container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 18px;
-}
-
 .members-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
+  margin-bottom: 5rem;
 }
-
-.members-heading {
-  color:#0b5360;
-}
-
-.members-buttons > h3 {
-  color: var(--beige);
-}
-
-.members-img{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
   
-@media (max-width:680px) {
-  .members-buttons {
-     margin-bottom: 5rem;
-    }
-}
-
   /* Full-width input fields */
   input[type=text], input[type=password] {
     width: 100%;
