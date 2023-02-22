@@ -1194,7 +1194,7 @@ letter-spacing: normal;
     overflow: auto;
     /* Enable scroll if needed */
     background-color: rgb(0, 112, 121);
-    background-image: url('./assets/images/earth-icon.png'), url('./assets/images/nature-icon.png'), url('./assets/images/lamp.png') ;
+    background-image: url('/assets/images/earth-icon.png'), url('/assets/images/nature-icon.png'), url('/assets/images/lamp.png') ;
     background-position: top left, right bottom, bottom left;
     background-repeat: no-repeat;
     background-size: 150px, 150px 150px;
